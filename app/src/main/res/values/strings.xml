@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Moodle</string>
+    <string-array name="drawer_items">
+        <item>Courses</item>
+        <item>Grades</item>
+        <item>Threads</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="title_activity_backend_server_handler">BackendServerHandler</string>
+    <string name="title_activity_home_page2">HomePage2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_course">Course Code</string>
+</resources>
