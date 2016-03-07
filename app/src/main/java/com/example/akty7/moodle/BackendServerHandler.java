@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class BackendServerHandler extends AppCompatActivity {
 
-    String url = "http://tapi.cse.iitd.ernet.in:1805";
+    String url = "http://192.168.1.4:8000";
     String username="cs5110300";
     String password="shubham";
     //1

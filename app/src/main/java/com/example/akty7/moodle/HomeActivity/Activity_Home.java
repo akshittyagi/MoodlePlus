@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.akty7.moodle.CourseActivity.Activity_Course;
 import com.example.akty7.moodle.R;
@@ -53,6 +54,11 @@ public class Activity_Home extends AppCompatActivity
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        Bundle bundle = getIntent().getExtras();
+//        String name = bundle.getString("firstname")+" "+bundle.getString("lastname");
+//        String entry = bundle.getString("entryNo");
+
 
     }
     private void setupViewPager(ViewPager viewPager) {

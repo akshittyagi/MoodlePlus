@@ -1,5 +1,6 @@
 package com.example.akty7.moodle;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -23,12 +25,12 @@ import org.json.JSONObject;
 
 public class Activity_Login extends AppCompatActivity {
 
-    EditText editTxt1 = null;
-    EditText editTxt2 = null;
-    Button button = null;
+    EditText editTxt1;
+    EditText editTxt2;
+    Button button;
 
-    private String userName = null;
-    private String passWord = null;
+
+    //String url = "http://tapi.cse.iitd.ernet.in:1805";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,84 +43,86 @@ public class Activity_Login extends AppCompatActivity {
         editTxt2 = (EditText) findViewById(R.id.editText2);
         button = (Button) findViewById(R.id.button);
 
-        //TODO : (BACKEND) Strings for login
-        userName = editTxt1.getText().toString();
-        passWord = editTxt2.getText().toString();
+        editTxt2.setHint("Password");
+        final Context context = this;
 
-        boolean succ = login(userName,passWord);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                if(loginCheck(userName, passWord)){
-                    Intent intent = new Intent(Activity_Login.this, Activity_Home.class);
-                    Activity_Login.this.startActivity(intent);
-                    Activity_Login.this.finish();
-                }
+                final String userName = editTxt1.getText().toString();
+                final String passWord = editTxt2.getText().toString();
+                final String url = "http://10.192.62.164:8000";
+                String urlJsonObj = url + "/default/login.json?userid=" + userName + "&password=" + passWord;
+
+                RequestQueue q = Volley.newRequestQueue(context);
+                JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+                        urlJsonObj, null, new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+
+                        Bundle bundle = new Bundle();
+                        try {
+                            boolean successful = (response.getString("success").equals("true"));
+                            if(successful){
+
+                                //TODO:Bundling
+                                JSONObject user = response.getJSONObject("user");
+                                String lastname = user.getString("last_name");
+                                bundle.putString("lastname",lastname);
+                                String id = user.getString("id");
+                                bundle.putString("id",id);
+                                String firstName = user.getString("first_name");
+                                bundle.putString("firstname",firstName);
+                                String entryNo = user.getString("entry_no");
+                                bundle.putString("entryNo",entryNo);
+                                String email = user.getString("email");
+                                bundle.putString("email",email);
+                                String username = user.getString("username");
+                                bundle.putString("username",username);
+                                String password = user.getString("password");
+                                bundle.putString("password",password);
+                                String type = user.getString("type_");
+                                bundle.putString("type",type);
+                                Intent intent = new Intent(Activity_Login.this, Activity_Home.class);
+                                intent.putExtras(bundle);
+                                Activity_Login.this.startActivity(intent);
+                                Activity_Login.this.finish();
+
+                            } else {
+
+                                Toast.makeText(getApplicationContext(),
+                                        "User not found",
+                                        Toast.LENGTH_LONG).show();
+
+                            }
+                        } catch (org.json.JSONException e) {
+                            Toast.makeText(getApplicationContext(),
+                                    "Error: " + e.getMessage(),
+                                    Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(Activity_Login.this, Activity_Home.class);
+                            intent.putExtras(bundle);
+                            Activity_Login.this.startActivity(intent);
+                            Activity_Login.this.finish();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(),
+                                error.getMessage(), Toast.LENGTH_SHORT).show();
+                        // hide the progress dialog
+
+                    }
+                });
+            q.add(jsonObjReq);
             }
-        });
+
+            });
 
 
     }
-    String url = "http://tapi.cse.iitd.ernet.in:1805";
 
-    public boolean login(String username,String password)
-    {
-        String urlJsonObj =url + "/default/login.json?userid=" + username + "&password=" + password;
-        boolean ret=false;
-
-        RequestQueue q = Volley.newRequestQueue(this);
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
-                urlJsonObj, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-
-
-    try {
-        boolean successful = (response.getString("success").equals("true"));
-        if (successful) {
-            JSONObject user = response.getJSONObject("user");
-            String lastname = user.getString("last_name");
-            String id = user.getString("mobile");
-            String firstName = user.getString("first_name");
-            String entryNo = user.getString("entry_no");
-            String email = user.getString("email");
-            String username = user.getString("username");
-            String registrationID = user.getString("registration_id");
-            String password = user.getString("password");
-            String type = user.getString("type_");
-
-        } else {
-
-            Toast.makeText(getApplicationContext(),
-                    "User not found",
-                    Toast.LENGTH_LONG).show();
-
-        }
-    } catch (org.json.JSONException e) {
-        Toast.makeText(getApplicationContext(),
-                "Error: " + e.getMessage(),
-                Toast.LENGTH_LONG).show();
-    }
-
-            }
-        }, new Response.ErrorListener() {
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_SHORT).show();
-                // hide the progress dialog
-
-            }
-        });
-
-        return ret;
-    }
-
-
-    public boolean loginCheck(String user, String pass){
-        //TODO
-        return true;
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
