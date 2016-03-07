@@ -60,6 +60,7 @@ public class Activity_Login extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
 
                         Bundle bundle = new Bundle();
+                        bundle.putString("url",url);
                         try {
                             boolean successful = (response.getString("success").equals("true"));
                             if(successful){

@@ -1,5 +1,6 @@
 package com.example.akty7.moodle.HomeActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,9 +18,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.CourseActivity.Activity_Course;
 import com.example.akty7.moodle.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,8 +68,8 @@ public class Activity_Home extends AppCompatActivity
         tabLayout.setupWithViewPager(viewPager);
 
         Bundle bundle = getIntent().getExtras();
-//        String name = bundle.getString("firstname")+" "+bundle.getString("lastname");
-//        String entry = bundle.getString("entryNo");
+        String name = bundle.getString("firstname")+" "+bundle.getString("lastname");
+        String entry = bundle.getString("entryNo");
 
 
     }
@@ -134,13 +146,15 @@ public class Activity_Home extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Bundle bundle = getIntent().getExtras();
+
 
         if (id == R.id.nav_notifs) {
             // Handle the actions
         } else if (id == R.id.nav_calendar) {
 
         } else if (id == R.id.nav_logout) {
-
+            logout(bundle.getString("url"));
         } else if (id == R.id.nav_grades) {
 
         }
@@ -153,4 +167,33 @@ public class Activity_Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+    public void logout(String Url)
+    {
+        String urlLog = Url + "/default/logout.json";
+        RequestQueue q = Volley.newRequestQueue(this);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, urlLog, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response){
+
+                try {
+                    String notifcount = response.getString("noti_count");
+                    Intent intent = new Intent(Activity_Home.this, Activity_Login.class);
+                    startActivity(intent);
+                    Activity_Home.this.finish();
+                } catch (JSONException e) {
+                    Toast.makeText(getApplicationContext(),"Error Signing out",Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),"Error Signing out",Toast.LENGTH_LONG).show();
+            }
+        });
+        q.add(jsonObjectRequest);
+    }
+
 }
