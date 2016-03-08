@@ -50,7 +50,7 @@ public class Activity_Login extends AppCompatActivity {
             public void onClick(View v){
                 final String userName = editTxt1.getText().toString();
                 final String passWord = editTxt2.getText().toString();
-                final String url = "http://10.192.62.164:8000";
+                final String url = "http://192.168.1.4:8000";
                 String urlJsonObj = url + "/default/login.json?userid=" + userName + "&password=" + passWord;
 
                 RequestQueue q = Volley.newRequestQueue(context);

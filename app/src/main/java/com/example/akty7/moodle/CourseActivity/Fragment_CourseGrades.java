@@ -41,6 +41,9 @@ public class Fragment_CourseGrades extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
         rootView = inflater.inflate(R.layout.fragment_course_list, container, false);
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.course_recycler_view);
         mRecyclerView.setHasFixedSize(true);
@@ -51,6 +54,7 @@ public class Fragment_CourseGrades extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
         return rootView;
     }
+
     //TYAGI: This method gives fake data.. Instead from the course class, take the inputs
     //Also IDK WHAT THE JSON DATA IS so make course class accordingly and add methods to get data from it..
     // then <String> Wil be replaced by <Course> everywhere

@@ -62,21 +62,24 @@ public class Activity_Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         viewPager = (ViewPager) findViewById(R.id.homepager);
+        Bundle bundle = getIntent().getExtras();
+
         setupViewPager(viewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        Bundle bundle = getIntent().getExtras();
         String name = bundle.getString("firstname")+" "+bundle.getString("lastname");
         String entry = bundle.getString("entryNo");
 
 
     }
+
     private void setupViewPager(ViewPager viewPager) {
+        Bundle bundle = getIntent().getExtras();
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Notifications(ctx), "NOTIFICATIONS");
-        adapter.addFragment(new Fragment_CourseList(ctx), "COURSES");
+        adapter.addFragment(new Fragment_CourseList(ctx,bundle), "COURSES");
         adapter.addFragment(new Fragment_Grades(), "GRADES");
         viewPager.setAdapter(adapter);
     }

@@ -30,6 +30,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
     private TabLayout tabLayout;
     private ViewPager viewPager;
     Context ctx;
+    Bundle bundleUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Notifications(ctx), "ASSIGNMENTS");
-        adapter.addFragment(new Fragment_CourseList(ctx), "THREADS");
+        adapter.addFragment(new Fragment_CourseList(ctx,bundle), "THREADS");
         adapter.addFragment(new Fragment_Grades(), "RESOURCES");
         adapter.addFragment(new Fragment_Grades(), "GRADES");
         viewPager.setAdapter(adapter);
