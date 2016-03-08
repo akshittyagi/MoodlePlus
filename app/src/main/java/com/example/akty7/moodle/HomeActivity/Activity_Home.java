@@ -80,7 +80,7 @@ public class Activity_Home extends AppCompatActivity
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Notifications(ctx,bundle), "NOTIFICATIONS");
         adapter.addFragment(new Fragment_CourseList(ctx,bundle), "COURSES");
-        adapter.addFragment(new Fragment_Grades(), "GRADES");
+        adapter.addFragment(new Fragment_Grades(ctx,bundle), "GRADES");
         viewPager.setAdapter(adapter);
     }
 

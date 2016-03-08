@@ -1,5 +1,7 @@
 package com.example.akty7.moodle.HomeActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +13,20 @@ import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.R;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -24,9 +38,12 @@ public class Fragment_Grades extends Fragment {
     TableLayout t1;
 
 
-
-    public Fragment_Grades() {
+    Bundle bundle;
+    Context ctx;
+    public Fragment_Grades(Context ctx,Bundle bundle) {
         // Required empty public constructor
+        this.ctx = ctx;
+        this.bundle = bundle;
     }
 
     @Override
@@ -87,8 +104,60 @@ public class Fragment_Grades extends Fragment {
     //Also IDK WHAT THE JSON DATA IS so make course class accordingly and add methods to get data from it..
     // then <String> Wil be replaced by <Course> everywhere
 
+    public class Grades{
+
+        String code;
+        String description;
+        String name;
+
+        public Grades(String code,String description,String name)
+        {
+            this.code = code;
+            this.description = description;
+            this.name = name;
+        }
+
+
+
+    }
     private ArrayList<String> getGrades() {
         ArrayList results = new ArrayList<String>();
+        final ArrayList<Grades> grad = new ArrayList<Grades>();
+        String url = bundle.getString("url") + "/default/grades.json";
+        RequestQueue q = Volley.newRequestQueue(ctx);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response){
+
+                try {
+
+                    JSONArray arrayGrades = response.getJSONArray("courses");
+                    for(int i=0 ; i<arrayGrades.length();i++)
+                    {
+                        JSONObject grades = (JSONObject)arrayGrades.get(i);
+                        String code = grades.getString("code");
+                        String name = grades.getString("name");
+                        String description = grades.getString("description");
+                        Grades g = new Grades(code,description,name);
+                        grad.add(g);
+                    }
+
+
+                } catch (JSONException e) {
+                    Toast.makeText(ctx, "Error loading grades", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
+            }
+        });
+        q.add(jsonObjectRequest);
+
+        //TODO: All data in grades arraylist
+
         for (int index = 0; index < 7; index++) {
             String obj = "Notification "+index;
             results.add(index, obj);
