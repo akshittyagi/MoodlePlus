@@ -93,8 +93,8 @@ public class Fragment_CourseList extends Fragment {
                         bundle.putString("coursecode",Course.getString("code"));
                         bundle.putString("coursename",Course.getString("name");
                         bundle.putString("description",Course.getString("description");
-                        bundle.putString("credits",Course.getString("3");
-                        bundle.putString("ltp",Course.getString("l_t_p");
+                        bundle.putString("credits",Course.getString("3"));
+                        bundle.putString("ltp",Course.getString("l_t_p"));
                         ArrayList<Assignment> a=null;
                         ArrayList<CourseThreads> c= null;
                         Course cour = new Course(bundle,a,c);
@@ -114,7 +114,7 @@ public class Fragment_CourseList extends Fragment {
         });
         q.add(jsonObjectRequest);
 
-        //TODO: Everything is now stored in arraylist of Courses "Course"  
+        //TODO: Everything is now stored in arraylist of Courses "Course"
         for (int index = 0; index < 20; index++) {
             String obj = "Course "+index;
             results.add(index, obj);
