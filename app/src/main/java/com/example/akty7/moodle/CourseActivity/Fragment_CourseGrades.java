@@ -97,7 +97,7 @@ public class Fragment_CourseGrades extends Fragment {
         ArrayList results = new ArrayList<String>();
         bundle.putString("coursecode","cop290");
         final ArrayList<Grades> list = new ArrayList<Grades>();
-        String url = bundle.getString("url") + "courses/course.json/" + bundle.getString("coursecode") + "/grades";
+        String url = bundle.getString("url") + "/courses/course.json/" + bundle.getString("coursecode") + "/grades";
 
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

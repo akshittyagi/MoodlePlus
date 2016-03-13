@@ -72,9 +72,9 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Assignments(ctx,bundleUser), "ASSIGNMENTS");
-        adapter.addFragment(new Fragment_CourseList(ctx,bundleUser), "THREADS");
+        adapter.addFragment(new Fragment_Threads(ctx,bundleUser), "THREADS");
         adapter.addFragment(new Fragment_Grades(ctx,bundleUser), "RESOURCES");
-        adapter.addFragment(new Fragment_Grades(ctx,bundleUser), "GRADES");
+        adapter.addFragment(new Fragment_CourseGrades(ctx,bundleUser), "GRADES");
         viewPager.setAdapter(adapter);
     }
 
