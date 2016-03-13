@@ -112,12 +112,12 @@ public class Fragment_CourseGrades extends Fragment {
                         Grades grad;
                         Bundle bundle = new Bundle();
                         JSONObject grade = (JSONObject)grades.get(i);
-                        bundle.putString("weight",grade.getString("weightage");
-                        bundle.putString("userid",grade.getString("user_id");
-                        bundle.putString("name",grade.getString("name");
-                        bundle.putString("outof", grade.getString("out_of");
-                        bundle.putString("courseid",grade.getString("registered_course_id");
-                        bundle.putString("score",grade.getString("score");
+                        bundle.putString("weight",grade.getString("weightage"));
+                        bundle.putString("userid",grade.getString("user_id"));
+                        bundle.putString("name",grade.getString("name"));
+                        bundle.putString("outof", grade.getString("out_of"));
+                        bundle.putString("courseid",grade.getString("registered_course_id"));
+                        bundle.putString("score",grade.getString("score"));
                         grad = new Grades(bundle);
                         list.add(grad);
                     }
