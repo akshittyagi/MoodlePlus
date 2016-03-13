@@ -43,7 +43,7 @@ public class Activity_Home extends AppCompatActivity
     private ViewPager viewPager;
 
     Context ctx;
-
+    Bundle bundle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +62,7 @@ public class Activity_Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         viewPager = (ViewPager) findViewById(R.id.homepager);
-        Bundle bundle = getIntent().getExtras();
+        bundle = getIntent().getExtras();
 
         setupViewPager(viewPager);
 
@@ -162,7 +162,10 @@ public class Activity_Home extends AppCompatActivity
 
         }
         else if (id == R.id.nav_courses) {
+            Bundle bundleUser ;
+            bundleUser = this.bundle;
             Intent intent = new Intent(ctx,Activity_Course.class);
+            intent.putExtras(bundleUser);
             startActivity(intent);
         }
 

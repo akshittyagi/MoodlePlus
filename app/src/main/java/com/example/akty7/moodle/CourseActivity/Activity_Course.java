@@ -1,6 +1,7 @@
 package com.example.akty7.moodle.CourseActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -15,11 +16,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.HomeActivity.Fragment_CourseList;
 import com.example.akty7.moodle.HomeActivity.Fragment_Grades;
 import com.example.akty7.moodle.HomeActivity.Fragment_Notifications;
 import com.example.akty7.moodle.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +50,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         setContentView(R.layout.activity_course);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        bundleUser = getIntent().getExtras();
         ctx = this;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.course_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -139,7 +151,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         } else if (id == R.id.nav_calendar) {
 
         } else if (id == R.id.nav_logout) {
-
+            logout(bundleUser.getString("url"));
         } else if (id == R.id.nav_grades) {
 
         } else if (id == R.id.nav_courses) {
@@ -151,6 +163,31 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         return true;
     }
 
+    public void logout(String Url)
+    {
+        String urlLog = Url + "/default/logout.json";
+        RequestQueue q = Volley.newRequestQueue(this);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, urlLog, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response){
 
+                try {
+                    String notifcount = response.getString("noti_count");
+                    Intent intent = new Intent(Activity_Course.this, Activity_Login.class);
+                    startActivity(intent);
+                    Activity_Course.this.finish();
+                } catch (JSONException e) {
+                    Toast.makeText(getApplicationContext(), "Error Signing out", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),"Error Signing out",Toast.LENGTH_LONG).show();
+            }
+        });
+        q.add(jsonObjectRequest);
+    }
 
 }

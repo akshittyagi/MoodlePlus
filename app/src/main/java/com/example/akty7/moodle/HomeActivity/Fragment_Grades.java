@@ -124,7 +124,7 @@ public class Fragment_Grades extends Fragment {
         ArrayList results = new ArrayList<String>();
         final ArrayList<Grades> grad = new ArrayList<Grades>();
         String url = bundle.getString("url") + "/default/grades.json";
-       
+
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
             @Override
