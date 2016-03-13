@@ -23,10 +23,12 @@ public class Fragment_Assignments extends Fragment {
     private static String LOG_TAG = "Fragment_CourseList";
     View rootView;
     Context ctx;
+    Bundle bundle;
 
-    public Fragment_Assignments(Context c) {
+    public Fragment_Assignments(Context c,Bundle bundle) {
         // Required empty public constructor
         ctx = c;
+        this.bundle = bundle;
     }
 
     @Override

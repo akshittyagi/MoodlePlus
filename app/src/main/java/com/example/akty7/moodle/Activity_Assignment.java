@@ -30,6 +30,7 @@ public class Activity_Assignment extends AppCompatActivity  implements Navigatio
     private TabLayout tabLayout;
     private ViewPager viewPager;
     Context ctx;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +59,10 @@ public class Activity_Assignment extends AppCompatActivity  implements Navigatio
     }
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Fragment_Notifications(ctx), "ASSIGNMENTS");
-        adapter.addFragment(new Fragment_CourseList(ctx), "THREADS");
-        adapter.addFragment(new Fragment_Grades(), "RESOURCES");
-        adapter.addFragment(new Fragment_Grades(), "GRADES");
+        adapter.addFragment(new Fragment_Notifications(ctx,bundle), "ASSIGNMENTS");
+        adapter.addFragment(new Fragment_CourseList(ctx,bundle), "THREADS");
+        adapter.addFragment(new Fragment_Grades(ctx,bundle), "RESOURCES");
+        adapter.addFragment(new Fragment_Grades(ctx,bundle), "GRADES");
         viewPager.setAdapter(adapter);
     }
 

@@ -93,8 +93,10 @@ public class Fragment_Notifications extends Fragment {
 
     private ArrayList<String> getDataSet() {
         ArrayList results = new ArrayList<String>();
+
         String url = bundle.getString("url") + "/default/notifications.json";
         final ArrayList<Notif> notifics = new ArrayList<Notif>();
+
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
             @Override
@@ -108,9 +110,9 @@ public class Fragment_Notifications extends Fragment {
                         Bundle bundle = new Bundle();
                         JSONObject notifs = (JSONObject)array.get(i);
                         bundle.putString("userid", notifs.getString("user_id"));
-                        bundle.putBoolean("isseen", !(notifs.getString("is_seen") == "0");
-                        bundle.putString("createdat", notifs.getString("created_at");
-                        bundle.putString("id",notifs.getString("id");
+                        bundle.putBoolean("isseen", !(notifs.getString("is_seen") == "0") ) ;
+                        bundle.putString("createdat", notifs.getString("created_at"));
+                        bundle.putString("id",notifs.getString("id"));
                         temp = new Notif(bundle);
                         String desc = notifs.getString("description");
                         temp.description  = Html.fromHtml(desc);
@@ -118,14 +120,14 @@ public class Fragment_Notifications extends Fragment {
                     }
 
                 } catch (JSONException e) {
-                    Toast.makeText(ctx, "Error loading notifications", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx, "Notif"+e.toString() , Toast.LENGTH_LONG).show();
                 }
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ctx,"Error loading notifications",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx,error.toString(),Toast.LENGTH_LONG).show();
             }
         });
         q.add(jsonObjectRequest);

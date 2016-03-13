@@ -64,9 +64,6 @@ public class BackendServerHandler extends AppCompatActivity {
         setSupportActionBar(toolbar);
         int code = 4;
         interactWithServer(code);
-
-
-
     }
 
 

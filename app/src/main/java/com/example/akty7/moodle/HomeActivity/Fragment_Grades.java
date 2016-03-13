@@ -124,6 +124,7 @@ public class Fragment_Grades extends Fragment {
         ArrayList results = new ArrayList<String>();
         final ArrayList<Grades> grad = new ArrayList<Grades>();
         String url = bundle.getString("url") + "/default/grades.json";
+       
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
             @Override
@@ -144,14 +145,14 @@ public class Fragment_Grades extends Fragment {
 
 
                 } catch (JSONException e) {
-                    Toast.makeText(ctx, "Error loading grades", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx, "Grades" + e.toString(), Toast.LENGTH_LONG).show();
                 }
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx, error.toString() ,Toast.LENGTH_LONG).show();
             }
         });
         q.add(jsonObjectRequest);

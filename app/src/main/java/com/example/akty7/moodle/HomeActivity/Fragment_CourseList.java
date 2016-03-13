@@ -84,17 +84,17 @@ public class Fragment_CourseList extends Fragment {
 
                 try {
 
-                    JSONObject courses = response.getJSONObject("courses");
+                    //JSONObject courses = response.getJSONObject("courses");
                     JSONArray arr = response.getJSONArray("courses");
                     for(int i=0; i<arr.length();i++)
                     {
                         Bundle bundle = new Bundle();
                         JSONObject Course = (JSONObject) arr.get(i);
                         bundle.putString("coursecode",Course.getString("code"));
-                        bundle.putString("coursename",Course.getString("name");
-                        bundle.putString("description",Course.getString("description");
-                        bundle.putString("credits",Course.getString("3"));
-                        bundle.putString("ltp",Course.getString("l_t_p"));
+                        bundle.putString("coursename", Course.getString("name"));
+                        bundle.putString("description", Course.getString("description"));
+                        bundle.putString("credits", Course.getString("credits"));
+                        bundle.putString("ltp", Course.getString("l_t_p"));
                         ArrayList<Assignment> a=null;
                         ArrayList<CourseThreads> c= null;
                         Course cour = new Course(bundle,a,c);
@@ -102,14 +102,14 @@ public class Fragment_CourseList extends Fragment {
 
                     }
                 } catch (JSONException e) {
-                    Toast.makeText(ctx, "Error loading courses", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx, "CourseList"+ e.toString() , Toast.LENGTH_LONG).show();
                 }
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ctx,"Error Loading courses",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx,error.toString(),Toast.LENGTH_LONG).show();
             }
         });
         q.add(jsonObjectRequest);
