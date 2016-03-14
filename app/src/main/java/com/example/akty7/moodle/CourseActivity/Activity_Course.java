@@ -74,7 +74,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         adapter.addFragment(new Fragment_Assignments(ctx,bundleUser), "ASSIGNMENTS");
         adapter.addFragment(new Fragment_Threads(ctx,bundleUser), "THREADS");
         adapter.addFragment(new Fragment_Grades(ctx,bundleUser), "RESOURCES");
-        adapter.addFragment(new Fragment_CourseGrades(ctx,bundleUser), "GRADES");
+
         viewPager.setAdapter(adapter);
     }
 

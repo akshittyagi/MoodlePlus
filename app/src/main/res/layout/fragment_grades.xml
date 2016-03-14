@@ -11,25 +11,5 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|top"
         android:stretchColumns="1">
-
-        <TableRow>
-            <TextView
-                android:text="Ohhk"
-                android:padding="3dip" />
-            <TextView
-                android:text="String string"
-                android:gravity="right"
-                android:padding="3dip" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:text="Some string"
-                android:padding="3dip" />
-            <TextView
-                android:text="Another useless"
-                android:gravity="right"
-                android:padding="3dip" />
-        </TableRow>
     </TableLayout>
 </FrameLayout>

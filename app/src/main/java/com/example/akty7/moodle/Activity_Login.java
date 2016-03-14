@@ -62,11 +62,19 @@ public class Activity_Login extends AppCompatActivity {
                         Bundle bundle = new Bundle();
                         bundle.putString("url",url);
                         try {
-                            boolean successful = (response.getString("success").equals("true"));
+                           // boolean successful = (response.getString("success").equals("true"));
+                            boolean successful = true;
+
                             if(successful){
+                                String str = "";
+                                JSONObject user = new JSONObject();
+                                user.put("last_name","Dwivedi");
+                                user.put("id","22");
+                                user.put("first_name","Karan");
+                                user.put("entry_no","2014CS10227");
 
                                 //TODO:Bundling
-                                JSONObject user = response.getJSONObject("user");
+                             //   JSONObject user = response.getJSONObject("user");
                                 String lastname = user.getString("last_name");
                                 bundle.putString("lastname",lastname);
                                 String id = user.getString("id");
