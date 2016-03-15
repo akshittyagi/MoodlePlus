@@ -1,4 +1,6 @@
-package com.example.akty7.moodle;
+package com.example.akty7.moodle.HelperClasses;
+
+import com.example.akty7.moodle.HelperClasses.Comments;
 
 import java.util.ArrayList;
 

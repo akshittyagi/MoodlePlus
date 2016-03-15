@@ -140,6 +140,7 @@ public class Activity_Home extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            logout(bundle.getString("url"));
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -164,7 +165,7 @@ public class Activity_Home extends AppCompatActivity
         else if (id == R.id.nav_courses) {
             Bundle bundleUser ;
             bundleUser = this.bundle;
-            Intent intent = new Intent(ctx,Activity_Course.class);
+            Intent intent = new Intent(ctx,Activity_Home.class);
             intent.putExtras(bundleUser);
             startActivity(intent);
         }

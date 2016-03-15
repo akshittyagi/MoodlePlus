@@ -50,7 +50,7 @@ public class Activity_Login extends AppCompatActivity {
             public void onClick(View v){
                 final String userName = editTxt1.getText().toString();
                 final String passWord = editTxt2.getText().toString();
-                final String url = "http://192.168.1.4:8000";
+                final String url = "http://10.192.62.164:8000";
                 String urlJsonObj = url + "/default/login.json?userid=" + userName + "&password=" + passWord;
 
                 RequestQueue q = Volley.newRequestQueue(context);
@@ -62,19 +62,13 @@ public class Activity_Login extends AppCompatActivity {
                         Bundle bundle = new Bundle();
                         bundle.putString("url",url);
                         try {
-                           // boolean successful = (response.getString("success").equals("true"));
-                            boolean successful = true;
+                            boolean successful = (response.getString("success").equals("true"));
 
                             if(successful){
-                                String str = "";
-                                JSONObject user = new JSONObject();
-                                user.put("last_name","Dwivedi");
-                                user.put("id","22");
-                                user.put("first_name","Karan");
-                                user.put("entry_no","2014CS10227");
 
                                 //TODO:Bundling
-                             //   JSONObject user = response.getJSONObject("user");
+                                JSONObject user = response.getJSONObject("user");
+
                                 String lastname = user.getString("last_name");
                                 bundle.putString("lastname",lastname);
                                 String id = user.getString("id");

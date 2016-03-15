@@ -1,4 +1,4 @@
-package com.example.akty7.moodle.HomeActivity;
+package com.example.akty7.moodle.HelperClasses;
 
 import android.os.Bundle;
 

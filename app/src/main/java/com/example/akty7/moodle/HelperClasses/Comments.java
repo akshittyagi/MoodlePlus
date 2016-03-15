@@ -1,4 +1,4 @@
-package com.example.akty7.moodle;
+package com.example.akty7.moodle.HelperClasses;
 
 /**
  * Created by akty7 on 08-Mar-16.

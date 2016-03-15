@@ -67,37 +67,34 @@ public class Fragment_Grades extends Fragment {
 
         //KARAN: Formatting of the ROWS!!!
 
+        TableRow tr_head = new TableRow(rootView.getContext());
+        tr_head.setId(10);
+        tr_head.setBackgroundColor(Color.YELLOW);
+        tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-        ArrayList<String> input = getGrades();
-        for (String i:input) {
-            TableRow tr_head = new TableRow(rootView.getContext());
-            tr_head.setId(10);
-            tr_head.setBackgroundColor(Color.GRAY);        // part1
-            tr_head.setLayoutParams(new TableRow.LayoutParams(
-                    TableRow.LayoutParams.MATCH_PARENT,
-                    TableRow.LayoutParams.WRAP_CONTENT));
+        TextView label_hello = new TextView(rootView.getContext());
+        label_hello.setId(20);
+        label_hello.setText("ID");
+        label_hello.setTextColor(Color.parseColor("#303F9F"));          // part2
+        label_hello.setPadding(5, 5, 5, 5);
+        tr_head.addView(label_hello);// add the column to the table row here
 
+        TextView label_android = new TextView(rootView.getContext());    // part3
+        label_android.setId(21);// define id that must be unique
+        label_android.setText("COURSE"); // set the text for the header
+        label_android.setTextColor(Color.BLACK); // set the color
+        label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
+        tr_head.addView(label_android); // add the column to the table row here
 
-            TextView label_hello = new TextView(rootView.getContext());
-            label_hello.setId(20);
-            label_hello.setText("HELLO");
-            label_hello.setTextColor(Color.WHITE);          // part2
-            label_hello.setPadding(5, 5, 5, 5);
-            tr_head.addView(label_hello);// add the column to the table row here
+        TextView label_desc = new TextView(rootView.getContext());    // part3
+        label_android.setId(21);// define id that must be unique
+        label_android.setText("DESCRIPTION"); // set the text for the header
+        label_android.setTextColor(Color.BLACK); // set the color
+        label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
+        tr_head.addView(label_desc); // add the column to the table row here
 
-            TextView label_android = new TextView(rootView.getContext());    // part3
-            label_android.setId(21);// define id that must be unique
-            label_android.setText("ANDROID..!!"); // set the text for the header
-            label_android.setTextColor(Color.WHITE); // set the color
-            label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
-            tr_head.addView(label_android); // add the column to the table row here
-
-            t1.addView(tr_head, new TableLayout.LayoutParams(
-                    TableRow.LayoutParams.FILL_PARENT,                    //part4
-                    TableRow.LayoutParams.MATCH_PARENT));
-
-        }
-
+        t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
+        getGrades();
         return rootView;
     }
     //TYAGI: This method gives fake data.. Instead from the course class, take the inputs
@@ -120,33 +117,67 @@ public class Fragment_Grades extends Fragment {
 
 
     }
-    private ArrayList<String> getGrades() {
-        ArrayList results = new ArrayList<String>();
-        final ArrayList<Grades> grad = new ArrayList<Grades>();
+
+    private void getGrades() {
+
         String url = bundle.getString("url") + "/default/grades.json";
 
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response){
-
+                JSONArray arrayGrades = new JSONArray();
                 try {
-
-                    JSONArray arrayGrades = response.getJSONArray("courses");
-                    for(int i=0 ; i<arrayGrades.length();i++)
-                    {
-                        JSONObject grades = (JSONObject)arrayGrades.get(i);
-                        String code = grades.getString("code");
-                        String name = grades.getString("name");
-                        String description = grades.getString("description");
-                        Grades g = new Grades(code,description,name);
-                        grad.add(g);
-                    }
-
-
+                    arrayGrades = response.getJSONArray("courses");
                 } catch (JSONException e) {
                     Toast.makeText(ctx, "Grades" + e.toString(), Toast.LENGTH_LONG).show();
                 }
+
+                for(int i=0 ; i<arrayGrades.length();i++)
+                    {
+                        Grades g;
+                        try {
+                            JSONObject grades = (JSONObject) arrayGrades.get(i);
+
+                            String code = grades.getString("code");
+                            String name = grades.getString("name");
+                            String description = grades.getString("description");
+                            g = new Grades(code, description, name);
+
+                            TableRow tr_head = new TableRow(rootView.getContext());
+                            tr_head.setId(10);
+                            tr_head.setBackgroundColor(Color.parseColor("#E040FB"));
+                            tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+                            TextView label_hello = new TextView(rootView.getContext());
+                            label_hello.setId(20);
+                            label_hello.setText(g.code);
+                            label_hello.setTextColor(Color.BLACK);          // part2
+                            label_hello.setPadding(5, 5, 5, 5);
+                            tr_head.addView(label_hello);// add the column to the table row here
+
+                            TextView label_android = new TextView(rootView.getContext());    // part3
+                            label_android.setId(21);// define id that must be unique
+                            label_android.setText(g.name); // set the text for the header
+                            label_android.setTextColor(Color.BLACK); // set the color
+                            label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
+                            tr_head.addView(label_android); // add the column to the table row here
+
+                            TextView label_desc = new TextView(rootView.getContext());    // part3
+                            label_android.setId(21);// define id that must be unique
+                            label_android.setText(g.description); // set the text for the header
+                            label_android.setTextColor(Color.BLACK); // set the color
+                            label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
+                            tr_head.addView(label_desc); // add the column to the table row here
+
+                            t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
+                        }
+                        catch(JSONException e)
+                        {
+                            Toast.makeText(ctx, "Grades" + e.toString(), Toast.LENGTH_LONG).show();
+                        }
+
+                    }
 
             }
         }, new Response.ErrorListener() {
@@ -157,12 +188,5 @@ public class Fragment_Grades extends Fragment {
         });
         q.add(jsonObjectRequest);
 
-        //TODO: All data in grades arraylist
-
-        for (int index = 0; index < 7; index++) {
-            String obj = "Notification "+index;
-            results.add(index, obj);
-        }
-        return results;
     }
 }

@@ -3,6 +3,7 @@ package com.example.akty7.moodle.HomeActivity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.akty7.moodle.CourseChildren.Activity_Assignment;
 import com.example.akty7.moodle.R;
 
 import java.util.ArrayList;
@@ -49,7 +51,7 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
     public DataObjectHolder onCreateViewHolder(ViewGroup parent,  int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.notif_card, parent, false);
+                .inflate(R.layout.card_notif, parent, false);
 
         DataObjectHolder dataObjectHolder = new DataObjectHolder(view);
         return dataObjectHolder;
@@ -78,6 +80,9 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
                         });
                 AlertDialog dialog = builder.create();
                 dialog.show();
+                Intent intent = new Intent(ctx, Activity_Assignment.class);
+                ctx.startActivity(intent);
+
 
             }
 

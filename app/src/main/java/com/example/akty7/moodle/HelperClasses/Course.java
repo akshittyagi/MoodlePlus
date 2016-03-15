@@ -1,9 +1,6 @@
-package com.example.akty7.moodle.HomeActivity;
+package com.example.akty7.moodle.HelperClasses;
 
 import android.os.Bundle;
-
-import com.example.akty7.moodle.Assignment;
-import com.example.akty7.moodle.CourseThreads;
 
 import java.util.ArrayList;
 
@@ -54,6 +51,19 @@ public class Course {
 
         }
 
+    /**
+     * Created by akty7 on 08-Mar-16.
+     */
+    public static class Assignment {
+
+        String name;
+        String file;
+        String createdat;
+        String registeredcourseid;
+        boolean lateallowed;
+        String deadline;
+
     }
+}
 
 

@@ -16,9 +16,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.akty7.moodle.Assignment;
-import com.example.akty7.moodle.CourseThreads;
+import com.example.akty7.moodle.HelperClasses.CourseThreads;
 import com.example.akty7.moodle.DividerItemDecoration;
+import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.R;
 
 import org.json.JSONArray;
@@ -95,7 +95,7 @@ public class Fragment_CourseList extends Fragment {
                         bundle.putString("description", Course.getString("description"));
                         bundle.putString("credits", Course.getString("credits"));
                         bundle.putString("ltp", Course.getString("l_t_p"));
-                        ArrayList<Assignment> a=null;
+                        ArrayList<com.example.akty7.moodle.HelperClasses.Course.Assignment> a=null;
                         ArrayList<CourseThreads> c= null;
                         Course cour = new Course(bundle,a,c);
                         Courses.add(cour);

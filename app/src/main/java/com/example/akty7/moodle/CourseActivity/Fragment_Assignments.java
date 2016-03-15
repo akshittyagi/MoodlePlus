@@ -1,7 +1,6 @@
 package com.example.akty7.moodle.CourseActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,8 +18,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.akty7.moodle.Activity_Login;
-import com.example.akty7.moodle.Assignment;
 import com.example.akty7.moodle.HomeActivity.CourseRecyclerViewAdapter;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;

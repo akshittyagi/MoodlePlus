@@ -41,7 +41,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    Context ctx;
+    public Context ctx;
     Bundle bundleUser;
 
     @Override

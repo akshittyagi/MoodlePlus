@@ -1,5 +1,8 @@
-package com.example.akty7.moodle.HomeActivity;
+package com.example.akty7.moodle.CourseActivity;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,21 +14,23 @@ import com.example.akty7.moodle.R;
 
 import java.util.ArrayList;
 
-public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecyclerViewAdapter.DataObjectHolder> {
+public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
     private ArrayList<String> mDataset;
+    Context ctx;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
-        TextView label;
-        TextView dateTime;
+        TextView courseName;
+        TextView courseCode;
         View v;
         TextView thumbletter;
+
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            label = (TextView) itemView.findViewById(R.id.textView);
-            dateTime = (TextView) itemView.findViewById(R.id.textView2);
+            courseName = (TextView) itemView.findViewById(R.id.textView);
+            courseCode = (TextView) itemView.findViewById(R.id.textView2);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
@@ -35,15 +40,16 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
 
 
 
-    public CourseRecyclerViewAdapter(ArrayList<String> myDataset) {
+    public ThreadsRecyclerViewAdapter(ArrayList<String> myDataset, Context inctx) {
         mDataset = myDataset;
+        ctx = inctx;
     }
 
     @Override
     public DataObjectHolder onCreateViewHolder(ViewGroup parent,  int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.card_course, parent, false);
+                .inflate(R.layout.card_notif, parent, false);
 
         DataObjectHolder dataObjectHolder = new DataObjectHolder(view);
         return dataObjectHolder;
@@ -52,15 +58,27 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
         String str = mDataset.get(position);
-        holder.label.setText(str);
-        holder.dateTime.setText(str);
+        holder.courseName.setText(str);
+        holder.courseCode.setText(str);
         holder.thumbletter.setText(Character.toString(str.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Log.d(LOG_TAG, "onClick at" + position);
-                // etc
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+                builder.setMessage("Dummy Message "+position)
+                        .setTitle("Dummy Title "+position)
+                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // User cancelled the dialog
+                                dialog.dismiss();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
             }
 
         });
