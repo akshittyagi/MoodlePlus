@@ -23,16 +23,16 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
-        TextView courseName;
-        TextView courseCode;
+        TextView assignTitle;
+        TextView assignLink;
         View v;
         TextView thumbletter;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            courseName = (TextView) itemView.findViewById(R.id.textView);
-            courseCode = (TextView) itemView.findViewById(R.id.textView2);
+            assignTitle = (TextView) itemView.findViewById(R.id.textView);
+            assignLink = (TextView) itemView.findViewById(R.id.textView2);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
@@ -51,7 +51,7 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
     public DataObjectHolder onCreateViewHolder(ViewGroup parent,  int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.card_notif, parent, false);
+                .inflate(R.layout.card_assignment, parent, false);
 
         DataObjectHolder dataObjectHolder = new DataObjectHolder(view);
         return dataObjectHolder;
@@ -60,8 +60,8 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
         String str = mDataset.get(position);
-        holder.courseName.setText(str);
-        holder.courseCode.setText(str);
+        holder.assignTitle.setText(str);
+        holder.assignLink.setText(str);
         holder.thumbletter.setText(Character.toString(str.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
@@ -69,18 +69,10 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
             public void onClick(View v) {
                 Log.d(LOG_TAG, "onClick at" + position);
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-                builder.setMessage("Dummy Message "+position)
-                        .setTitle("Dummy Title "+position)
-                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                // User cancelled the dialog
-                                dialog.dismiss();
-                            }
-                        });
-                AlertDialog dialog = builder.create();
-                dialog.show();
                 Intent intent = new Intent(ctx, Activity_Assignment.class);
+
+           //     TYAGI putxtra here
+
                 ctx.startActivity(intent);
 
 

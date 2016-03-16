@@ -5,27 +5,15 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a510a45c-57bb-4c1b-912a-f35cb5e3029b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Assignment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Resources.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Resource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_resource.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_resource.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Comments.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Comments.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Cookie.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Cookie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseThreads.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/CourseThreads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Course.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Course.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Notifications.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Notifications.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/assignment_card.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_thread.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/course_card.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_course.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/notif_card.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/thread_card.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml" />
+    <list default="true" id="d61eb845-2464-4d5f-91a8-63e5410888b7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_comments.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_comments.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_threadlist.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_comments.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_thread.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_comment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
@@ -33,15 +21,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley" afterPath="$PROJECT_DIR$/app/volley" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/.gitignore" afterPath="$PROJECT_DIR$/app/volley/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Assignment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Assignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Activity_Course.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Activity_Course.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Activity_Login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Activity_Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/Android.mk" afterPath="$PROJECT_DIR$/app/volley/Android.mk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/AndroidAuthenticator.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/AndroidAuthenticator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/AndroidAuthenticatorTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/AndroidAuthenticatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/volley/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/AuthFailureError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/AuthFailureError.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Authenticator.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Authenticator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/BasicNetwork.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/BasicNetwork.java" />
@@ -54,14 +38,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/CacheTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/CacheTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/CacheTestUtils.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/CacheTestUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ClearCacheRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ClearCacheRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/DefaultRetryPolicy.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/DefaultRetryPolicy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/DiskBasedCache.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/DiskBasedCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/DiskBasedCacheTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/DiskBasedCacheTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ExecutorDelivery.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ExecutorDelivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Assignments.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Assignments.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpClientStack.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpClientStack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpClientStackTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpClientStackTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpHeaderParser.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpHeaderParser.java" />
@@ -95,7 +75,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkResponse.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NoCache.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NoCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NoConnectionError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NoConnectionError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/NotifRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/NotifRecyclerViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ParseError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ParseError.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/PoolingByteArrayOutputStreamTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/PoolingByteArrayOutputStreamTest.java" />
@@ -118,27 +97,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/StringRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/StringRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/StringRequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/StringRequestTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/TestRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/TestRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/TimeoutError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/TimeoutError.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Volley.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Volley.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyError.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyLog.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyLog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/WaitableQueue.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/WaitableQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_assignment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_assignment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/build.gradle" afterPath="$PROJECT_DIR$/app/volley/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/build.xml" afterPath="$PROJECT_DIR$/app/volley/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_course.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_course.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/custom_rules.xml" afterPath="$PROJECT_DIR$/app/volley/custom_rules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/resources/org.robolectric.Config.properties" afterPath="$PROJECT_DIR$/app/volley/src/test/resources/org.robolectric.Config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/pom.xml" afterPath="$PROJECT_DIR$/app/volley/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/proguard-project.txt" afterPath="$PROJECT_DIR$/app/volley/proguard-project.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/proguard.cfg" afterPath="$PROJECT_DIR$/app/volley/proguard.cfg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/rules.gradle" afterPath="$PROJECT_DIR$/app/volley/rules.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AssignmentOne.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,141 +133,123 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="AssignmentOne" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_assignment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="e#840#859#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="app_bar_home.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_home.xml">
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_bar_comments.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_comments.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51428574">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_comments.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_comments.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_assignment.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="33.096775">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_assignment.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.612903">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="nav_header_home.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_home.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_home.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.83871">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="card_assignment.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_course.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_course.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-19.741936">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app_bar_assignment.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_assignment.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6774193">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_bar_home.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_home.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7419355">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_comments.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_comments.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_bar_course.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_course.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.32258">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment_Grades.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57575756">
-              <caret line="148" column="83" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
-              <folding>
-                <element signature="e#4552#7845#0" expanded="true" />
-                <element signature="e#7844#7845#0" expanded="true" />
-                <element signature="e#7847#8065#0" expanded="true" />
-                <element signature="e#8064#8065#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activity_Home.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activity_Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Activity_Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.83871">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -2639,29 +2603,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/volley/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Course.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Notifications.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/CourseThreads.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Activity_Course.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/NotifRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_assignment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Assignment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Activity_Login.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_course.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_threadlist.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_comment.xml" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -2695,24 +2646,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="AssignmentOne" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volley" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2759,10 +2702,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moodle" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2880,27 +2819,15 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3204db3598c821fb" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.akty7.moodle.CourseActivity" />
-    </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2922,26 +2849,6 @@
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2982,11 +2889,6 @@
         <option name="Make" enabled="false" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -3037,7 +2939,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -3062,15 +2964,12 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a510a45c-57bb-4c1b-912a-f35cb5e3029b" name="Default" comment="" />
-      <created>1458033545984</created>
+      <changelist id="d61eb845-2464-4d5f-91a8-63e5410888b7" name="Default" comment="" />
+      <created>1458147410223</created>
       <option name="number" value="Default" />
-      <updated>1458033545984</updated>
+      <updated>1458147410223</updated>
     </task>
     <servers />
   </component>
@@ -3079,35 +2978,35 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5030303" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15458937" sideWeight="0.4969697" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -3118,269 +3017,220 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkResponse.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/volley/rules.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/volley/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Assignments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Notifications.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#1522#1891#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1946#2173#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-1.1624366">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Notifications.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Cookie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3446602">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#376#394#0" expanded="true" />
-            <element signature="e#1705#1750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/CourseThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Activity_Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="84" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.0964467">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/NotifRecyclerViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.88324875">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Assignment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30964467">
+          <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/AssignRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42639595">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_course.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_threadlist.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_home.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_comments.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.83871">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_comments.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="46.258064">
+        <state vertical-scroll-proportion="33.096775">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_course.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.83871">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_assignment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state vertical-scroll-proportion="-7.612903">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_comment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29285714">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
-            <element signature="e#840#859#0" expanded="true" />
+            <element signature="e#2036#2069#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml">
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_home.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12182741">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_assignment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.741936">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_assignment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6774193">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_home.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7419355">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_comments.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_course.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.32258">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.51428574">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/Activity_Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57575756">
-          <caret line="148" column="83" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
-          <folding>
-            <element signature="e#4552#7845#0" expanded="true" />
-            <element signature="e#7844#7845#0" expanded="true" />
-            <element signature="e#7847#8065#0" expanded="true" />
-            <element signature="e#8064#8065#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
