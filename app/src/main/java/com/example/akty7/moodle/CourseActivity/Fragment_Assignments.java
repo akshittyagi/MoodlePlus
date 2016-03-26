@@ -18,6 +18,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.HomeActivity.CourseRecyclerViewAdapter;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;
@@ -88,7 +89,7 @@ public class Fragment_Assignments extends Fragment {
             deadline = bundle.getString("deadline");
         }
     }
-    private ArrayList<String> getDataSet() {
+    private ArrayList<Course> getDataSet() {
         ArrayList results = new ArrayList<String>();
         bundle.putString("coursecode","cop290");
         final ArrayList<Assignments> list = new ArrayList<Assignments>();

@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -27,7 +24,7 @@ public class Activity_Login extends AppCompatActivity {
 
     EditText editTxt1;
     EditText editTxt2;
-    Button button;
+    ImageButton button;
 
 
     //String url = "http://tapi.cse.iitd.ernet.in:1805";
@@ -38,10 +35,10 @@ public class Activity_Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        setTitle("Yet another Moodle App");
         editTxt1 = (EditText) findViewById(R.id.editText);
         editTxt2 = (EditText) findViewById(R.id.editText2);
-        button = (Button) findViewById(R.id.button);
+        button = (ImageButton) findViewById(R.id.button);
 
         editTxt2.setHint("Password");
         final Context context = this;
@@ -50,7 +47,7 @@ public class Activity_Login extends AppCompatActivity {
             public void onClick(View v){
                 final String userName = editTxt1.getText().toString();
                 final String passWord = editTxt2.getText().toString();
-                final String url = "http://10.192.62.164:8000";
+                final String url = "http://192.168.1.8:8000";
                 String urlJsonObj = url + "/default/login.json?userid=" + userName + "&password=" + passWord;
 
                 RequestQueue q = Volley.newRequestQueue(context);
@@ -126,25 +123,7 @@ public class Activity_Login extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
 }

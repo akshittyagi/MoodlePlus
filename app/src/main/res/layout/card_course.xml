@@ -36,7 +36,7 @@
                 android:layout_alignParentLeft="true"/>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/coursename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -45,7 +45,7 @@
                 android:gravity="top"/>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/coursedesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_vertical_margin"
@@ -53,6 +53,14 @@
                 android:layout_toRightOf="@id/thumb"
                 android:gravity="right"
                 android:layout_below="@+id/textView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD111"
+                android:id="@+id/coursecode"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

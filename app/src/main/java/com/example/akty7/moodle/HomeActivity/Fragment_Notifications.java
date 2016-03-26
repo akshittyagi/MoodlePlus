@@ -1,14 +1,11 @@
 package com.example.akty7.moodle.HomeActivity;
 
-import android.app.DownloadManager;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
-import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.akty7.moodle.Activity_Login;
+import com.example.akty7.moodle.HelperClasses.Notif;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;
 
@@ -41,10 +38,16 @@ public class Fragment_Notifications extends Fragment {
     Bundle bundle;
 
     public Fragment_Notifications(Context c,Bundle bundle) {
-        // Required empty public constructor
-
         ctx = c;
         this.bundle = bundle;
+    }
+
+
+    public Fragment_Notifications() {
+        // Required empty public constructor
+
+        ctx = null;
+        bundle = new Bundle();
     }
 
     @Override
@@ -73,26 +76,10 @@ public class Fragment_Notifications extends Fragment {
     //Also IDK WHAT THE JSON DATA IS so make course class accordingly and add methods to get data from it..
     // then <String> Wil be replaced by <Course> everywhere
 
-    public class Notif{
 
-        Spanned description;
-        boolean isSeen;
-        String createdat;
-        String id;
-        String userid;
 
-        public Notif(Bundle bundle)
-        {
-            isSeen = bundle.getBoolean("isseen");
-            createdat = bundle.getString("createdat");
-            userid = bundle.getString("userid");
-            id = bundle.getString("id");
-        }
+    private ArrayList<Notif> getDataSet() {
 
-    }
-
-    private ArrayList<String> getDataSet() {
-        ArrayList results = new ArrayList<String>();
 
         String url = bundle.getString("url") + "/default/notifications.json";
         final ArrayList<Notif> notifics = new ArrayList<Notif>();
@@ -132,14 +119,6 @@ public class Fragment_Notifications extends Fragment {
         });
         q.add(jsonObjectRequest);
 
-        //TODO: Everything is now stored in arraylist of Notifs "notifics"
-        //TODO: desc is a Spanned type object which has to be put into edittext apne app htmp parse ho jayeg
-
-
-        for (int index = 0; index < 20; index++) {
-            String obj = "Notification "+index;
-            results.add(index, obj);
-        }
-        return results;
+        return notifics;
     }
 }

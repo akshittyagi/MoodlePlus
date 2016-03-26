@@ -18,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.akty7.moodle.Activity_Login;
+import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.HomeActivity.CourseRecyclerViewAdapter;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;
@@ -79,7 +80,7 @@ public class Fragment_Threads extends Fragment {
         String Threadid ;
     }
 
-    private ArrayList<String> getDataSet() {
+    private ArrayList<Course> getDataSet() {
 
         final ArrayList<Thread> list = new ArrayList<Thread>();
         bundle.putString("coursecode","cop290");

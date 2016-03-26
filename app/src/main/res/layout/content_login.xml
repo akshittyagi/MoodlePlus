@@ -10,38 +10,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Activity_Login"
+    android:gravity="center_vertical"
     tools:showIn="@layout/activity_login">
 
-
-    <EditText
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Username"
+     android:layout_height="100dp"
+        android:id="@+id/imageView2"
 
-        android:textSize="14sp"
-        android:id="@+id/editText"
-        android:layout_marginTop="63dp"
+        android:src="@drawable/login"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:id="@+id/editText"
+       android:layout_below="@+id/imageView2"
+      />
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
         android:hint="Password"
         android:id="@+id/editText2"
-        android:layout_marginTop="53dp"
         android:layout_below="@+id/editText"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
+
+    <ImageButton
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText2"
+        android:src="@drawable/login_btn_src"
+        android:foregroundGravity="center_vertical" />
+
+
+
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.akty7.moodle.HomeActivity;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -7,35 +8,36 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.akty7.moodle.CourseActivity.Activity_Course;
+import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.R;
 
 import java.util.ArrayList;
 
 public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<String> mDataset;
+    private ArrayList<Course> mDataset;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
-        TextView label;
-        TextView dateTime;
+        TextView code;
+        TextView name;
+        TextView desc;
         View v;
         TextView thumbletter;
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            label = (TextView) itemView.findViewById(R.id.textView);
-            dateTime = (TextView) itemView.findViewById(R.id.textView2);
+            code = (TextView) itemView.findViewById(R.id.coursecode);
+            name = (TextView) itemView.findViewById(R.id.coursename);
+            desc = (TextView) itemView.findViewById(R.id.coursedesc);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
-            Log.i(LOG_TAG, "Adding Listener");
         }
-
-
     }
 
 
 
-    public CourseRecyclerViewAdapter(ArrayList<String> myDataset) {
+    public CourseRecyclerViewAdapter(ArrayList<Course> myDataset) {
         mDataset = myDataset;
     }
 
@@ -51,23 +53,27 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        String str = mDataset.get(position);
-        holder.label.setText(str);
-        holder.dateTime.setText(str);
-        holder.thumbletter.setText(Character.toString(str.charAt(0)));
+        final Course cour = mDataset.get(position);
+        holder.code.setText(cour.coursecode);
+        holder.name.setText(cour.coursename);
+        holder.desc.setText(cour.description);
+        holder.thumbletter.setText(Character.toString(cour.coursename.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Log.d(LOG_TAG, "onClick at" + position);
-                // etc
+                Intent intent = new Intent(v.getContext(), Activity_Course.class);
+                //TYAGI putextra here for course code
+
+                v.getContext().startActivity(intent);
             }
 
         });
 
     }
 
-    public void addItem(String dataObj, int index) {
+    public void addItem(Course dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }

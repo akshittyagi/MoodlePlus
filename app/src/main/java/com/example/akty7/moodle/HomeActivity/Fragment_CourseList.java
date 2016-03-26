@@ -72,10 +72,9 @@ public class Fragment_CourseList extends Fragment {
     //Also IDK WHAT THE JSON DATA IS so make course class accordingly and add methods to get data from it..
     // then <String> Wil be replaced by <Course> everywhere
 
-    private ArrayList<String> getDataSet() {
+    private ArrayList<Course> getDataSet() {
 
-        ArrayList results = new ArrayList<String>();
-        final ArrayList<Course> Courses = new ArrayList<Course>();
+        final ArrayList<Course> Courses = new ArrayList<>();
         String url = bundle.getString("url") + "/courses/list.json";
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener<JSONObject>() {
@@ -114,11 +113,7 @@ public class Fragment_CourseList extends Fragment {
         });
         q.add(jsonObjectRequest);
 
-        //TODO: Everything is now stored in arraylist of Courses "Course"
-        for (int index = 0; index < 20; index++) {
-            String obj = "Course "+index;
-            results.add(index, obj);
-        }
-        return results;
+
+        return Courses;
     }
 }

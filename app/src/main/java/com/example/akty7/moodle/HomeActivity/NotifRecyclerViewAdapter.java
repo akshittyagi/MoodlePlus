@@ -12,27 +12,30 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.akty7.moodle.CourseChildren.Activity_Assignment;
+import com.example.akty7.moodle.HelperClasses.Notif;
 import com.example.akty7.moodle.R;
 
 import java.util.ArrayList;
 
 public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<String> mDataset;
+    private ArrayList<Notif> mDataset;
     Context ctx;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
-        TextView courseName;
-        TextView courseCode;
+        TextView sender;
+        TextView text;
+        TextView date;
         View v;
         TextView thumbletter;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            courseName = (TextView) itemView.findViewById(R.id.textView);
-            courseCode = (TextView) itemView.findViewById(R.id.textView2);
+            sender = (TextView) itemView.findViewById(R.id.sender);
+            text = (TextView) itemView.findViewById(R.id.text);
+            date = (TextView) itemView.findViewById(R.id.date);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
@@ -42,7 +45,7 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
 
 
 
-    public NotifRecyclerViewAdapter(ArrayList<String> myDataset,Context inctx) {
+    public NotifRecyclerViewAdapter(ArrayList<Notif> myDataset,Context inctx) {
         mDataset = myDataset;
         ctx = inctx;
     }
@@ -59,10 +62,12 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        String str = mDataset.get(position);
-        holder.courseName.setText(str);
-        holder.courseCode.setText(str);
-        holder.thumbletter.setText(Character.toString(str.charAt(0)));
+        final Notif notif = mDataset.get(position);
+        holder.text.setText(notif.description);
+        holder.date.setText(notif.createdat);
+        holder.sender.setText(notif.userid);
+
+        holder.thumbletter.setText(Character.toString(notif.userid.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -70,8 +75,8 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
                 Log.d(LOG_TAG, "onClick at" + position);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-                builder.setMessage("Dummy Message "+position)
-                        .setTitle("Dummy Title "+position)
+                builder.setMessage(notif.description)
+                        .setTitle(notif.createdat)
                         .setNegativeButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User cancelled the dialog
@@ -90,7 +95,7 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
 
     }
 
-    public void addItem(String dataObj, int index) {
+    public void addItem(Notif dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }
