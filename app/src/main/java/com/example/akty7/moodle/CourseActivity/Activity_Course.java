@@ -51,6 +51,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         bundleUser = getIntent().getExtras();
+        //TODO:BUNDLEUSER NOW HAS DATA COMING FROM THE CARD VIEW
         ctx = this;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.course_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
