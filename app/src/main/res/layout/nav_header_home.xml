@@ -23,13 +23,13 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:id="@+id/navName"
-        android:text="John Doe"
+        android:text="Shubham"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/navNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cs1110200" />
+        android:text="cs5110300" />
 
 </LinearLayout>

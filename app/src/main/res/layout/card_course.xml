@@ -22,7 +22,6 @@
             android:layout_height="fill_parent">
 
             <TextView
-
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/thumb"
@@ -51,7 +50,7 @@
                 android:layout_marginLeft="@dimen/activity_vertical_margin"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/thumb"
-                android:gravity="right"
+                android:gravity="top"
                 android:layout_below="@+id/textView"/>
 
             <TextView
@@ -59,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="COD111"
                 android:id="@+id/coursecode"
+                android:gravity="right"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true" />
 

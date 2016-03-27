@@ -32,28 +32,20 @@
                 android:layout_alignParentStart="true"/>
 
             <TextView
-                android:id="@+id/sender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"
-                android:layout_toRightOf="@id/thumb"
-                android:layout_alignParentTop="true"/>
-            <TextView
                 android:id="@+id/text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_vertical_margin"
                 android:layout_toRightOf="@id/thumb"
-                android:layout_below="@id/sender"/>
+                android:layout_alignParentTop="true"
+                />
 
             <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/thumb"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
                android:layout_alignParentEnd="true"/>
 
         </RelativeLayout>

@@ -24,7 +24,6 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
-        TextView sender;
         TextView text;
         TextView date;
         View v;
@@ -33,14 +32,11 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            sender = (TextView) itemView.findViewById(R.id.sender);
             text = (TextView) itemView.findViewById(R.id.text);
             date = (TextView) itemView.findViewById(R.id.date);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
-
-
     }
 
 
@@ -65,9 +61,8 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
         final Notif notif = mDataset.get(position);
         holder.text.setText(notif.description);
         holder.date.setText(notif.createdat);
-        holder.sender.setText(notif.userid);
 
-        holder.thumbletter.setText(Character.toString(notif.userid.charAt(0)));
+        holder.thumbletter.setText(Character.toString(notif.description.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -87,8 +82,6 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
                 dialog.show();
                 Intent intent = new Intent(ctx, Activity_Assignment.class);
                 ctx.startActivity(intent);
-
-
             }
 
         });
