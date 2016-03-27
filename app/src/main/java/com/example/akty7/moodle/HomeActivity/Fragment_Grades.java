@@ -74,27 +74,86 @@ public class Fragment_Grades extends Fragment {
 
         TextView title_id = new TextView(rootView.getContext());
         title_id.setId(20);
-        title_id.setText("ID");
+        title_id.setText("CODE");
         title_id.setTextColor(Color.BLACK);          // part2
         title_id.setPadding(5, 5, 5, 5);
         tr_head.addView(title_id);// add the column to the table row here
 
         TextView title_course = new TextView(rootView.getContext());    // part3
         title_course.setId(21);// define id that must be unique
-        title_course.setText("COURSE"); // set the text for the header
+        title_course.setText("NAME"); // set the text for the header
         title_course.setTextColor(Color.BLACK); // set the color
         title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
         tr_head.addView(title_course); // add the column to the table row here
 
         TextView label_desc = new TextView(rootView.getContext());    // part3
-        title_course.setId(21);// define id that must be unique
-        title_course.setText("DESCRIPTION"); // set the text for the header
+        title_course.setId(22);// define id that must be unique
+        title_course.setText("SCORE"); // set the text for the header
         title_course.setTextColor(Color.BLACK); // set the color
         title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
         tr_head.addView(label_desc); // add the column to the table row here
 
+        TextView label_outof = new TextView(rootView.getContext());    // part3
+        title_course.setId(23);// define id that must be unique
+        title_course.setText("OUT OF"); // set the text for the header
+        title_course.setTextColor(Color.BLACK); // set the color
+        title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+        tr_head.addView(label_outof); // add the column to the table row here
+
+        TextView label_weight = new TextView(rootView.getContext());    // part3
+        title_course.setId(24);// define id that must be unique
+        title_course.setText("WEIGHT"); // set the text for the header
+        title_course.setTextColor(Color.BLACK); // set the color
+        title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+        tr_head.addView(label_weight); // add the column to the table row here
+
         t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
-        getGrades();
+        ArrayList<Grades> grad= getGrades();
+
+        for( Grades g : grad){
+            TableRow tr_body = new TableRow(rootView.getContext());
+            tr_head.setId(10);
+            tr_head.setBackgroundColor(Color.parseColor("#03A9F4"));
+            tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+            TextView lbl_code = new TextView(rootView.getContext());
+            title_id.setId(20);
+            title_id.setText(g.code);
+            title_id.setTextColor(Color.BLACK);          // part2
+            title_id.setPadding(5, 5, 5, 5);
+            tr_head.addView(lbl_code);// add the column to the table row here
+
+            TextView lbl_course = new TextView(rootView.getContext());    // part3
+            title_course.setId(21);// define id that must be unique
+            title_course.setText(g.name); // set the text for the header
+            title_course.setTextColor(Color.BLACK); // set the color
+            title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+            tr_head.addView(lbl_course); // add the column to the table row here
+
+            TextView lbl_grade = new TextView(rootView.getContext());    // part3
+            title_course.setId(22);// define id that must be unique
+            title_course.setText(g.score); // set the text for the header
+            title_course.setTextColor(Color.BLACK); // set the color
+            title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+            tr_head.addView(lbl_grade); // add the column to the table row here
+
+            TextView lbl_outof = new TextView(rootView.getContext());    // part3
+            title_course.setId(23);// define id that must be unique
+            title_course.setText(g.outof); // set the text for the header
+            title_course.setTextColor(Color.BLACK); // set the color
+            title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+            tr_head.addView(lbl_outof); // add the column to the table row here
+
+            TextView lbl_weight = new TextView(rootView.getContext());    // part3
+            title_course.setId(24);// define id that must be unique
+            title_course.setText(g.weight); // set the text for the header
+            title_course.setTextColor(Color.BLACK); // set the color
+            title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+            tr_head.addView(lbl_weight); // add the column to the table row here
+
+            t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
+        }
+
         return rootView;
     }
     //TYAGI: This method gives fake data.. Instead from the course class, take the inputs

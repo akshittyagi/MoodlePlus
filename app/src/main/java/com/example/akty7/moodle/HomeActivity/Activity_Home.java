@@ -73,10 +73,10 @@ public class Activity_Home extends AppCompatActivity
         String name = bundle.getString("firstname")+" "+bundle.getString("lastname");
         String entry = bundle.getString("entryNo");
 
-        TextView tv = (TextView) findViewById(R.id.navName);
-        tv.setText(name);
-        TextView tv1 = (TextView) findViewById(R.id.navNumber);
-        tv1.setText(entry);
+    //    TextView tv = (TextView) findViewById(R.id.navName);
+    //    tv.setText(name);
+    //    TextView tv1 = (TextView) findViewById(R.id.navNumber);
+    //    tv1.setText(entry);
 
     }
 
