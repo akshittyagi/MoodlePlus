@@ -22,7 +22,7 @@ public class Activity_Comments extends AppCompatActivity {
         setContentView(R.layout.activity_comments);
         Toolbar toolbar = (Toolbar) findViewById(R.id.comments_toolbar);
         setSupportActionBar(toolbar);
-        ctx = getApplicationContext();
+        ctx = getBaseContext();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

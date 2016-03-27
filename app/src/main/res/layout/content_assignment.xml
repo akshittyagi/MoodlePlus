@@ -21,14 +21,17 @@
 
         <LinearLayout
             android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Asignment Name"
+
                 android:id="@+id/assname"
                 android:layout_gravity="center_vertical" />
 
@@ -37,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Link to file"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:textAppearance="?android:attr/textAppearanceButton"
                 android:id="@+id/link"
                 android:layout_gravity="center_vertical" />
@@ -46,6 +50,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Created At"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
                 android:id="@+id/uploaddate"
                 android:layout_gravity="center_vertical" />
 
@@ -58,6 +64,8 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
                 android:layout_height="wrap_content"
                 android:text="Late days allowed"
                 android:id="@+id/late"
@@ -67,12 +75,16 @@
             <ListView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
                 android:id="@+id/sublist"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1" />
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
                 android:layout_height="wrap_content"
                 android:text="Type"
                 android:id="@+id/asstype"
@@ -81,6 +93,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
                 android:text="Deadline"
                 android:id="@+id/assdead"
                 android:layout_gravity="center_vertical" />

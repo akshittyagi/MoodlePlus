@@ -69,28 +69,28 @@ public class Fragment_Grades extends Fragment {
 
         TableRow tr_head = new TableRow(rootView.getContext());
         tr_head.setId(10);
-        tr_head.setBackgroundColor(Color.YELLOW);
+        tr_head.setBackgroundColor(Color.parseColor("#3F51B5"));
         tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-        TextView label_hello = new TextView(rootView.getContext());
-        label_hello.setId(20);
-        label_hello.setText("ID");
-        label_hello.setTextColor(Color.parseColor("#303F9F"));          // part2
-        label_hello.setPadding(5, 5, 5, 5);
-        tr_head.addView(label_hello);// add the column to the table row here
+        TextView title_id = new TextView(rootView.getContext());
+        title_id.setId(20);
+        title_id.setText("ID");
+        title_id.setTextColor(Color.BLACK);          // part2
+        title_id.setPadding(5, 5, 5, 5);
+        tr_head.addView(title_id);// add the column to the table row here
 
-        TextView label_android = new TextView(rootView.getContext());    // part3
-        label_android.setId(21);// define id that must be unique
-        label_android.setText("COURSE"); // set the text for the header
-        label_android.setTextColor(Color.BLACK); // set the color
-        label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
-        tr_head.addView(label_android); // add the column to the table row here
+        TextView title_course = new TextView(rootView.getContext());    // part3
+        title_course.setId(21);// define id that must be unique
+        title_course.setText("COURSE"); // set the text for the header
+        title_course.setTextColor(Color.BLACK); // set the color
+        title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
+        tr_head.addView(title_course); // add the column to the table row here
 
         TextView label_desc = new TextView(rootView.getContext());    // part3
-        label_android.setId(21);// define id that must be unique
-        label_android.setText("DESCRIPTION"); // set the text for the header
-        label_android.setTextColor(Color.BLACK); // set the color
-        label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
+        title_course.setId(21);// define id that must be unique
+        title_course.setText("DESCRIPTION"); // set the text for the header
+        title_course.setTextColor(Color.BLACK); // set the color
+        title_course.setPadding(5, 5, 5, 5); // set the padding (if required)
         tr_head.addView(label_desc); // add the column to the table row here
 
         t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
@@ -146,29 +146,29 @@ public class Fragment_Grades extends Fragment {
 
                             TableRow tr_head = new TableRow(rootView.getContext());
                             tr_head.setId(10);
-                            tr_head.setBackgroundColor(Color.parseColor("#E040FB"));
+                            tr_head.setBackgroundColor(Color.parseColor("#448AFF"));
                             tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                            TextView label_hello = new TextView(rootView.getContext());
-                            label_hello.setId(20);
-                            label_hello.setText(g.code);
-                            label_hello.setTextColor(Color.BLACK);          // part2
-                            label_hello.setPadding(5, 5, 5, 5);
-                            tr_head.addView(label_hello);// add the column to the table row here
+                            TextView row_id = new TextView(rootView.getContext());
+                            row_id.setId(20);
+                            row_id.setText(g.code);
+                            row_id.setTextColor(Color.BLACK);          // part2
+                            row_id.setPadding(5, 5, 5, 5);
+                            tr_head.addView(row_id);// add the column to the table row here
 
-                            TextView label_android = new TextView(rootView.getContext());    // part3
-                            label_android.setId(21);// define id that must be unique
-                            label_android.setText(g.name); // set the text for the header
-                            label_android.setTextColor(Color.BLACK); // set the color
-                            label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
-                            tr_head.addView(label_android); // add the column to the table row here
+                            TextView row_name = new TextView(rootView.getContext());    // part3
+                            row_name.setId(21);// define id that must be unique
+                            row_name.setText(g.name); // set the text for the header
+                            row_name.setTextColor(Color.BLACK); // set the color
+                            row_name.setPadding(5, 5, 5, 5); // set the padding (if required)
+                            tr_head.addView(row_name); // add the column to the table row here
 
-                            TextView label_desc = new TextView(rootView.getContext());    // part3
-                            label_android.setId(21);// define id that must be unique
-                            label_android.setText(g.description); // set the text for the header
-                            label_android.setTextColor(Color.BLACK); // set the color
-                            label_android.setPadding(5, 5, 5, 5); // set the padding (if required)
-                            tr_head.addView(label_desc); // add the column to the table row here
+                            TextView row_desc = new TextView(rootView.getContext());    // part3
+                            row_name.setId(21);// define id that must be unique
+                            row_name.setText(g.description); // set the text for the header
+                            row_name.setTextColor(Color.BLACK); // set the color
+                            row_name.setPadding(5, 5, 5, 5); // set the padding (if required)
+                            tr_head.addView(row_desc); // add the column to the table row here
 
                             t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
                         }

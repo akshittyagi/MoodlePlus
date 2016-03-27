@@ -1,14 +1,19 @@
 package com.example.akty7.moodle.CourseActivity;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -17,9 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.akty7.moodle.Activity_Login;
-import com.example.akty7.moodle.HelperClasses.Course;
-import com.example.akty7.moodle.HomeActivity.CourseRecyclerViewAdapter;
+import com.example.akty7.moodle.HelperClasses.Thread;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;
 
@@ -57,32 +60,58 @@ public class Fragment_Threads extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.fragment_course_list, container, false);
-        mRecyclerView = (RecyclerView) rootView.findViewById(R.id.course_recycler_view);
+        rootView = inflater.inflate(R.layout.fragment_threads, container, false);
+
+        FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+                builder.setTitle("New Comment ");
+                final EditText input = new EditText(ctx);
+                input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                builder.setView(input);
+
+
+                // Set up the buttons
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String m_Text = input.getText().toString();
+                        //TYAGI: JSON API TO SEND THIS AS THE NEW COMMENT
+                        dialog.dismiss();
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
+
+        mRecyclerView = (RecyclerView) rootView.findViewById(R.id.threads_recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(ctx, DividerItemDecoration.VERTICAL_LIST));
         mLayoutManager = new LinearLayoutManager(rootView.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CourseRecyclerViewAdapter(getDataSet());
+        mAdapter = new ThreadsRecyclerViewAdapter(getDataSet(),ctx);
         mRecyclerView.setAdapter(mAdapter);
         return rootView;
     }
     //TYAGI: This method gives fake data.. Instead from the course class, take the inputs
     //Also IDK WHAT THE JSON DATA IS so make course class accordingly and add methods to get data from it..
     // then <String> Wil be replaced by <Course> everywhere
-    public class Thread{
-        String user_id;
-        String descriptionTh;
-        String title ;
-        String created_at ;
-        String regiscourseid;
-        String updatedAt;
-        String Threadid ;
-    }
 
-    private ArrayList<Course> getDataSet() {
 
-        final ArrayList<Thread> list = new ArrayList<Thread>();
+    private ArrayList<Thread> getDataSet() {
+
+        final ArrayList<Thread> list = new ArrayList<>();
         bundle.putString("coursecode","cop290");
         String url = bundle.getString("url") + "/courses/course.json/" + bundle.getString("coursecode") + "/threads";
         RequestQueue q = Volley.newRequestQueue(ctx);
@@ -120,11 +149,7 @@ public class Fragment_Threads extends Fragment {
         q.add(jsonObjectRequest);
 
         //TODO: list contains all the thread of the course
-        ArrayList results = new ArrayList<String>();
-        for (int index = 0; index < 20; index++) {
-            String obj = "Course "+index;
-            results.add(index, obj);
-        }
-        return results;
+
+        return list;
     }
 }

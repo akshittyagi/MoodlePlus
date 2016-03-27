@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
+import com.example.akty7.moodle.HelperClasses.Thread;
 import com.example.akty7.moodle.CourseChildren.Activity_Comments;
 import com.example.akty7.moodle.R;
 
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<String> mDataset;
+    private ArrayList<Thread> mDataset;
     Context ctx;
     //private static MyClickListener myClickListener;
 
@@ -42,7 +42,7 @@ public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecy
 
 
 
-    public ThreadsRecyclerViewAdapter(ArrayList<String> myDataset, Context inctx) {
+    public ThreadsRecyclerViewAdapter(ArrayList<Thread> myDataset, Context inctx) {
         mDataset = myDataset;
         ctx = inctx;
     }
@@ -59,10 +59,10 @@ public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecy
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        String str = mDataset.get(position);
-        holder.threadTitle.setText(str);
-        holder.threadCreator.setText(str);
-        holder.thumbletter.setText(Character.toString(str.charAt(0)));
+        Thread str = mDataset.get(position);
+        holder.threadTitle.setText(str.title);
+        holder.threadCreator.setText(str.user_id);
+        holder.thumbletter.setText(Character.toString(str.title.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -80,7 +80,7 @@ public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecy
 
     }
 
-    public void addItem(String dataObj, int index) {
+    public void addItem(Thread dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }
