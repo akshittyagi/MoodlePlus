@@ -10,107 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61eb845-2464-4d5f-91a8-63e5410888b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Thread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley" afterPath="$PROJECT_DIR$/app/volley" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/.gitignore" afterPath="$PROJECT_DIR$/app/volley/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/Android.mk" afterPath="$PROJECT_DIR$/app/volley/Android.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/AndroidAuthenticator.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/AndroidAuthenticator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/AndroidAuthenticatorTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/AndroidAuthenticatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/volley/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/AuthFailureError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/AuthFailureError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Authenticator.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Authenticator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/BasicNetwork.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/BasicNetwork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/BasicNetworkTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/BasicNetworkTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ByteArrayPool.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ByteArrayPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ByteArrayPoolTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ByteArrayPoolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Cache.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Cache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/CacheDispatcher.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/CacheDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/CacheDispatcherTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/CacheDispatcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/CacheTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/CacheTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/CacheTestUtils.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/CacheTestUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ClearCacheRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ClearCacheRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/DefaultRetryPolicy.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/DefaultRetryPolicy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/DiskBasedCache.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/DiskBasedCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/DiskBasedCacheTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/DiskBasedCacheTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ExecutorDelivery.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ExecutorDelivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Threads.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Threads.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpClientStack.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpClientStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpClientStackTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpClientStackTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpHeaderParser.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpHeaderParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpHeaderParserTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HttpHeaderParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpStack.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HttpStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HurlStack.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/HurlStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HurlStackTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/HurlStackTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ImageLoader.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ImageLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ImageLoaderTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ImageLoaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ImageRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/ImageRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ImageRequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ImageRequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/ImmediateResponseDelivery.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/utils/ImmediateResponseDelivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonArrayRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonArrayRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonObjectRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonObjectRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/JsonRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/JsonRequestCharsetTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/JsonRequestCharsetTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/JsonRequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/JsonRequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockCache.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpClient.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpStack.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpURLConnection.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockHttpURLConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockNetwork.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockNetwork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockResponseDelivery.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/MockResponseDelivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Network.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Network.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkDispatcher.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/NetworkDispatcherTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/NetworkDispatcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NetworkImageView.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NetworkImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/NetworkImageViewTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/NetworkImageViewTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkResponse.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NetworkResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NoCache.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/NoCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NoConnectionError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/NoConnectionError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ParseError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ParseError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/PoolingByteArrayOutputStreamTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/PoolingByteArrayOutputStreamTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Request.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/RequestFuture.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/RequestFuture.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestFutureTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestFutureTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/RequestQueue.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/RequestQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestQueueIntegrationTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestQueueIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestQueueTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestQueueTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestQueueTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestQueueTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/RequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/RequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Response.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ResponseDelivery.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ResponseDelivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/ResponseDeliveryTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/ResponseDeliveryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ResponseTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/ResponseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/RetryPolicy.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/RetryPolicy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ServerError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/ServerError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/ShadowSystemClock.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/ShadowSystemClock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/StringRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/StringRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/StringRequestTest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/toolbox/StringRequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/TestRequest.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/TestRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/ThreadsRecyclerViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/TimeoutError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/TimeoutError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Volley.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/toolbox/Volley.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyError.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyLog.java" afterPath="$PROJECT_DIR$/app/volley/src/main/java/com/android/volley/VolleyLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/WaitableQueue.java" afterPath="$PROJECT_DIR$/app/volley/src/test/java/com/android/volley/mock/WaitableQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/build.gradle" afterPath="$PROJECT_DIR$/app/volley/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/build.xml" afterPath="$PROJECT_DIR$/app/volley/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/custom_rules.xml" afterPath="$PROJECT_DIR$/app/volley/custom_rules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/src/test/resources/org.robolectric.Config.properties" afterPath="$PROJECT_DIR$/app/volley/src/test/resources/org.robolectric.Config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/pom.xml" afterPath="$PROJECT_DIR$/app/volley/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/proguard-project.txt" afterPath="$PROJECT_DIR$/app/volley/proguard-project.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/proguard.cfg" afterPath="$PROJECT_DIR$/app/volley/proguard.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volley/rules.gradle" afterPath="$PROJECT_DIR$/app/volley/rules.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AssignmentOne.iws" />
@@ -127,16 +35,23 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="AssignmentOne" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Fragment_Threads.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fragment_Threads.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Threads.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42857143">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,11 +59,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentsRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java">
+      <file leaf-file-name="Activity_Home.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+              <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fragment_CourseList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33673468">
+              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,7 +94,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2084#2085#0" expanded="false" />
+                <element signature="e#2147#2148#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +108,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,7 +121,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.032258">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -193,21 +134,9 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.096775">
+            <state vertical-scroll-proportion="0.0">
               <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding>
-                <element signature="e#326#359#0" expanded="true" />
-                <element signature="e#384#419#0" expanded="true" />
-                <element signature="e#445#480#0" expanded="true" />
-                <element signature="e#504#537#0" expanded="true" />
-                <element signature="e#562#602#0" expanded="true" />
-                <element signature="e#1741#1774#0" expanded="true" />
-                <element signature="e#2237#2270#0" expanded="true" />
-                <element signature="e#2761#2794#0" expanded="true" />
-                <element signature="e#3167#3200#0" expanded="true" />
-                <element signature="e#3462#3495#0" expanded="true" />
-                <element signature="e#3857#3890#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -659,11 +588,6 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare AssignmentOne:volley:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareAssignmentOneVolleyUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72311Library" />
@@ -687,6 +611,11 @@
                 <option name="description" value="Prepare com.android.support:support-v4:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.volley:volley:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidVolleyVolleyUnspecifiedLibrary" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -854,6 +783,11 @@
                 <option name="name" value="assembleDefault" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Publishes artifacts to bintray.com." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bintrayUpload" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles a bundle containing the library in debug." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="bundleDebug" />
@@ -870,6 +804,19 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="copyReleaseLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Maven POM file for publication 'library'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generatePomFileForLibraryPublication" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadocJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -894,6 +841,25 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all publications produced by this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publish" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes Maven publication 'library' to the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publishLibraryPublicationToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publishToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourcesJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1293,11 +1259,6 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare AssignmentOne:volley:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareAssignmentOneVolleyUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72311Library" />
@@ -1321,6 +1282,11 @@
                 <option name="description" value="Prepare com.android.support:support-v4:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.volley:volley:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidVolleyVolleyUnspecifiedLibrary" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1546,6 +1512,11 @@
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Publishes artifacts to bintray.com." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="bintrayUpload" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
                 <option name="name" value="build" />
@@ -1757,6 +1728,11 @@
                 <option name="name" value="generateDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Generates the Maven POM file for publication 'library'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="generatePomFileForLibraryPublication" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
                 <option name="name" value="generateReleaseAssets" />
               </ExternalTaskPojo>
@@ -1785,6 +1761,14 @@
                 <option name="description" value="Installs the android (on device) tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
                 <option name="name" value="installDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="javadocJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
@@ -1966,6 +1950,21 @@
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Publishes all publications produced by this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="publish" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes Maven publication 'library' to the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="publishLibraryPublicationToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="publishToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the signing info for each variant." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
                 <option name="name" value="signingReport" />
@@ -1974,6 +1973,10 @@
                 <option name="description" value="Prints out all the source sets defined in this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
                 <option name="name" value="sourceSets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app/volley" />
+                <option name="name" value="sourcesJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':volley'." />
@@ -2069,6 +2072,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="7284993431893" />
+        <entry key="C:\Users\akty7\AssignmentOne" value="8754369601278" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2284,12 +2288,12 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1.aar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1.aar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1.aar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1.aar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/cardview-v7/23.1.1/cardview-v7-23.1.1.aar" />
-                            <option value="$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/cardview-v7/23.1.1/cardview-v7-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk1/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -2439,119 +2443,119 @@
               <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-core" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-scala" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/osgi" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-use" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/open-api" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-testing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-init" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/signing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-groovy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/wrapper" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-jvm" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/testing-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/scala" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/test-kit" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-comparison" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-base" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-java" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/javascript" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/announce" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/dependency-management" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/code-quality" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-http" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/publish" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/diagnostics" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/maven" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/core" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/reporting" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jacoco" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-jvm" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ivy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-play" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/launcher" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-groovy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ear" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugins" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api-builders" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-integ-testing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/sonar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/messaging" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-sftp" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/cli" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-development" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ui" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jetty" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services-groovy" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/antlr" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-comparison" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-init" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/cli" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/code-quality" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/core" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/dependency-management" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/diagnostics" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ear" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-integ-testing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-testing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ivy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jacoco" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/javascript" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jetty" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-java" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-jvm" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-scala" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/launcher" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/maven" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/messaging" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-core" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-groovy" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/open-api" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/osgi" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-base" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-jvm" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-play" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-development" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-use" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugins" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/publish" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/reporting" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-http" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-s3" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-open-api-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-launcher-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-sftp" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/scala" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/signing" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/sonar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/test-kit" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/testing-native" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api-builders" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ui" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/wrapper" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/ant-1.9.3.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/groovy-all-2.4.4.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-core-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-messaging-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-cli-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-wrapper-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-core-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-ui-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-tooling-api-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-docs-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-resources-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-base-services-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-base-services-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugins-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-use-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-antlr-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-scala-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-publish-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-java-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-comparison-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jacoco-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-init-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-dependency-management-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-play-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jetty-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-base-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-sftp-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-javascript-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-jvm-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-maven-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-diagnostics-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-osgi-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-http-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ivy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-signing-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ear-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-sonar-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-code-quality-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-development-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-scala-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-test-kit-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-reporting-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-cli-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-core-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-docs-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-launcher-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-messaging-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-core-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-groovy-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-open-api-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-resources-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-tooling-api-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-ui-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-wrapper-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/groovy-all-2.4.4.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-announce-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-antlr-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-comparison-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-init-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-code-quality-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-dependency-management-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-diagnostics-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ear-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ivy-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jacoco-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-javascript-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jetty-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-groovy-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-java-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-jvm-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-scala-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-maven-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-osgi-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-base-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-jvm-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-play-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-development-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-use-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugins-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-publish-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-reporting-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-http-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-s3-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-sftp-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-scala-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-signing-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-sonar-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-test-kit-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -2584,10 +2588,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/card_notif.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Notif.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/NotifRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Course.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/card_course.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Assignments.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Thread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_Grades.java" />
@@ -2596,6 +2598,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_threads.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Threads.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java" />
       </list>
     </option>
   </component>
@@ -2603,9 +2607,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2630,9 +2634,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2649,28 +2651,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2727,85 +2707,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moodle" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelperClasses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moodle" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CourseChildren" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moodle" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CourseActivity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssignmentOne" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2989,7 +2895,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="-8" y="0" width="976" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3000,8 +2906,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2753623" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27085853" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -3009,7 +2914,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42809734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -3022,6 +2927,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17727272" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="176" y="252" width="1166" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3041,6 +2947,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_assignment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_threadlist.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3207,13 +3124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84821427">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HelperClasses/Notif.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08035714">
@@ -3301,33 +3211,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2153846">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5472528">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Assignments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.221978">
           <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33186814">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3371,7 +3258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0">
           <caret line="326" column="57" selection-start-line="326" selection-start-column="57" selection-end-line="326" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3380,7 +3266,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3389,7 +3275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3428,19 +3313,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/Activity_Comments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2147#2148#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3448,7 +3329,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3457,7 +3340,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.032258">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -3468,31 +3351,51 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.096775">
+        <state vertical-scroll-proportion="0.0">
           <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#326#359#0" expanded="true" />
-            <element signature="e#384#419#0" expanded="true" />
-            <element signature="e#445#480#0" expanded="true" />
-            <element signature="e#504#537#0" expanded="true" />
-            <element signature="e#562#602#0" expanded="true" />
-            <element signature="e#1741#1774#0" expanded="true" />
-            <element signature="e#2237#2270#0" expanded="true" />
-            <element signature="e#2761#2794#0" expanded="true" />
-            <element signature="e#3167#3200#0" expanded="true" />
-            <element signature="e#3462#3495#0" expanded="true" />
-            <element signature="e#3857#3890#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseChildren/CommentsRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.28">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/CourseActivity/Fragment_Threads.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42857143">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Activity_Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/CourseRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/akty7/moodle/HomeActivity/Fragment_CourseList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33673468">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
