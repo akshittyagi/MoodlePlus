@@ -76,56 +76,56 @@ public class Fragment_CourseList extends Fragment {
     private ArrayList<Course> getDataSet() {
 
         final ArrayList<Course> Courses = new ArrayList<>();
-        Course c=new Course();
-        c.coursecode="cop290";
-        c.assignments=new ArrayList<>();
-        c.description="dummydesc";
-        c.coursename="Design Practices";
-        c.credits="3";
-        c.ltp="8-9-0";
-        Courses.add(c);
+//        Course c=new Course();
+//        c.coursecode="cop290";
+//        c.assignments=new ArrayList<>();
+//        c.description="dummydesc";
+//        c.coursename="Design Practices";
+//        c.credits="3";
+//        c.ltp="8-9-0";
+//        Courses.add(c);
 
-//
-//        String url = bundle.getString("url") + "/courses/list.json";
-//        RequestQueue q = Volley.newRequestQueue(ctx);
-//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener<JSONObject>() {
-//            @Override
-//            public void onResponse(JSONObject response){
-//
-//                try {
-//
-//                    //JSONObject courses = response.getJSONObject("courses");
-//                    JSONArray arr = response.getJSONArray("courses");
-//                    for(int i=0; i<arr.length();i++)
-//                    {
-//                        Bundle bundle = new Bundle();
-//                        JSONObject Course = (JSONObject) arr.get(i);
-//                        bundle.putString("coursecode",Course.getString("code"));
-//                        bundle.putString("coursename", Course.getString("name"));
-//                        bundle.putString("description", Course.getString("description"));
-//                        bundle.putString("credits", Course.getString("credits"));
-//                        bundle.putString("ltp", Course.getString("l_t_p"));
-//                        ArrayList<com.example.akty7.moodle.HelperClasses.Course.Assignment> a=null;
-//                        ArrayList<CourseThreads> c= null;
-//                        Course cour = new Course(bundle,a,c);
-//                        Courses.add(cour);
-//
-//                    }
-//                } catch (JSONException e) {
-//                    Toast.makeText(ctx, "CourseList"+ e.toString() , Toast.LENGTH_LONG).show();
-//                }
-//
-//            }
-//        }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                Toast.makeText(ctx,error.toString(),Toast.LENGTH_LONG).show();
-//            }
-//        });
-//        q.add(jsonObjectRequest);
-//
-//
-//
+
+        String url = bundle.getString("url") + "/courses/list.json";
+        RequestQueue q = Volley.newRequestQueue(ctx);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response){
+
+                try {
+
+                    //JSONObject courses = response.getJSONObject("courses");
+                    JSONArray arr = response.getJSONArray("courses");
+                    for(int i=0; i<arr.length();i++)
+                    {
+                        Bundle bundle = new Bundle();
+                        JSONObject Course = (JSONObject) arr.get(i);
+                        bundle.putString("coursecode",Course.getString("code"));
+                        bundle.putString("coursename", Course.getString("name"));
+                        bundle.putString("description", Course.getString("description"));
+                        bundle.putString("credits", Course.getString("credits"));
+                        bundle.putString("ltp", Course.getString("l_t_p"));
+                        ArrayList<com.example.akty7.moodle.HelperClasses.Course.Assignment> a=null;
+                        ArrayList<CourseThreads> c= null;
+                        Course cour = new Course(bundle,a,c);
+                        Courses.add(cour);
+
+                    }
+                } catch (JSONException e) {
+                    Toast.makeText(ctx, "CourseList"+ e.toString() , Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(ctx,error.toString(),Toast.LENGTH_LONG).show();
+            }
+        });
+        q.add(jsonObjectRequest);
+
+
+
         return Courses;
     }
 }

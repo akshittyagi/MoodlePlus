@@ -1,6 +1,7 @@
 package com.example.akty7.moodle.HomeActivity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -65,7 +66,13 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
                 Log.d(LOG_TAG, "onClick at" + position);
                 Intent intent = new Intent(v.getContext(), Activity_Course.class);
                 //TYAGI putextra here for course code
-
+                Bundle bundle = new Bundle();
+                bundle.putString("coursename",cour.coursename);
+                bundle.putString("coursecode",cour.coursecode);
+                bundle.putString("description",cour.description);
+                bundle.putString("credits",cour.credits);
+                bundle.putString("ltp",cour.ltp);
+                intent.putExtras(bundle);
                 v.getContext().startActivity(intent);
             }
 
