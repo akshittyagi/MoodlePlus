@@ -106,87 +106,59 @@ public class Fragment_Grades extends Fragment {
         String code;
         String description;
         String name;
+        String score;
+        String weight;
+        String outof;
 
-        public Grades(String code,String description,String name)
+        public Grades(String code,String description,String name,String score,String weight,String outof)
         {
             this.code = code;
             this.description = description;
             this.name = name;
+            this.score = score;
+            this.weight = weight;
+            this.outof = outof;
         }
 
 
 
     }
 
-    private void getGrades() {
+    private ArrayList<Grades> getGrades() {
 
         String url = bundle.getString("url") + "/default/grades.json";
+        final ArrayList<Grades> ret=new ArrayList<Grades>();
 
         RequestQueue q = Volley.newRequestQueue(ctx);
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response){
-                JSONArray arrayGrades = new JSONArray();
+
                 try {
-                    arrayGrades = response.getJSONArray("courses");
-                } catch (JSONException e) {
-                    Toast.makeText(ctx, "Grades" + e.toString(), Toast.LENGTH_LONG).show();
-                }
-
-                for(int i=0 ; i<arrayGrades.length();i++)
-                    {
-                        Grades g;
-                        try {
-                            JSONObject grades = (JSONObject) arrayGrades.get(i);
-
-                            String code = grades.getString("code");
-                            String name = grades.getString("name");
-                            String description = grades.getString("description");
-                            g = new Grades(code, description, name);
-
-                            TableRow tr_head = new TableRow(rootView.getContext());
-                            tr_head.setId(10);
-                            tr_head.setBackgroundColor(Color.parseColor("#448AFF"));
-                            tr_head.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-
-                            TextView row_id = new TextView(rootView.getContext());
-                            row_id.setId(20);
-                            row_id.setText(g.code);
-                            row_id.setTextColor(Color.BLACK);          // part2
-                            row_id.setPadding(5, 5, 5, 5);
-                            tr_head.addView(row_id);// add the column to the table row here
-
-                            TextView row_name = new TextView(rootView.getContext());    // part3
-                            row_name.setId(21);// define id that must be unique
-                            row_name.setText(g.name); // set the text for the header
-                            row_name.setTextColor(Color.BLACK); // set the color
-                            row_name.setPadding(5, 5, 5, 5); // set the padding (if required)
-                            tr_head.addView(row_name); // add the column to the table row here
-
-                            TextView row_desc = new TextView(rootView.getContext());    // part3
-                            row_name.setId(21);// define id that must be unique
-                            row_name.setText(g.description); // set the text for the header
-                            row_name.setTextColor(Color.BLACK); // set the color
-                            row_name.setPadding(5, 5, 5, 5); // set the padding (if required)
-                            tr_head.addView(row_desc); // add the column to the table row here
-
-                            t1.addView(tr_head, new TableLayout.LayoutParams(TableRow.LayoutParams.FILL_PARENT,TableRow.LayoutParams.MATCH_PARENT));
-                        }
-                        catch(JSONException e)
+                        JSONArray arrayGrades = response.getJSONArray("courses");
+                        JSONArray arrayCourse = response.getJSONArray("grades");
+                        for(int i=0;i<arrayGrades.length();i++)
                         {
-                            Toast.makeText(ctx, "Grades" + e.toString(), Toast.LENGTH_LONG).show();
+                            JSONObject course = (JSONObject)arrayCourse.get(i);
+                            JSONObject grade = (JSONObject)arrayGrades.get(i);
+                            Grades g;
+                            g = new Grades(course.getString("code"),course.getString("description"),course.getString("name"),grade.getString("score"),grade.getString("weightage"),grade.getString("out_of"));
+                            ret.add(g);
                         }
-
-                    }
+                } catch (JSONException e) {
+                    Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
+                }
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ctx, error.toString() ,Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
             }
         });
         q.add(jsonObjectRequest);
 
+        return ret;
     }
 }
+
