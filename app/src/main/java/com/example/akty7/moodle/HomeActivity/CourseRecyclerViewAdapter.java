@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.CourseActivity.Activity_Course;
 import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.R;
@@ -54,6 +55,8 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
+        //final String urlL = "http://192.168.1.8:8000";
+        final String urlL ="http://tapi.cse.iitd.ernet.in:1805";
         final Course cour = mDataset.get(position);
         holder.code.setText(cour.coursecode);
         holder.name.setText(cour.coursename);
@@ -72,6 +75,7 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
                 bundle.putString("description",cour.description);
                 bundle.putString("credits",cour.credits);
                 bundle.putString("ltp",cour.ltp);
+                bundle.putString("url",urlL);
                 intent.putExtras(bundle);
                 v.getContext().startActivity(intent);
             }

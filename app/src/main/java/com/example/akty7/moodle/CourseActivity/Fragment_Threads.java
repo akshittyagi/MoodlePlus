@@ -112,7 +112,7 @@ public class Fragment_Threads extends Fragment {
     private ArrayList<Thread> getDataSet() {
 
         final ArrayList<Thread> list = new ArrayList<>();
-        bundle.putString("coursecode","cop290");
+        //bundle.putString("coursecode","cop290");
         String url = bundle.getString("url") + "/courses/course.json/" + bundle.getString("coursecode") + "/threads";
         RequestQueue q = Volley.newRequestQueue(ctx);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

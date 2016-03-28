@@ -25,9 +25,10 @@ public class Activity_Login extends AppCompatActivity {
     EditText editTxt1;
     EditText editTxt2;
     ImageButton button;
+    //final String url = "http://192.168.1.8:8000";
 
 
-    //String url = "http://tapi.cse.iitd.ernet.in:1805";
+    final String url = "http://tapi.cse.iitd.ernet.in:1805";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,6 @@ public class Activity_Login extends AppCompatActivity {
             public void onClick(View v){
                 final String userName = editTxt1.getText().toString();
                 final String passWord = editTxt2.getText().toString();
-                final String url = "http://192.168.1.8:8000";
                 String urlJsonObj = url + "/default/login.json?userid=" + userName + "&password=" + passWord;
 
                 RequestQueue q = Volley.newRequestQueue(context);

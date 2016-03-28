@@ -194,8 +194,8 @@ public class Fragment_Grades extends Fragment {
             public void onResponse(JSONObject response){
 
                 try {
-                        JSONArray arrayGrades = response.getJSONArray("courses");
-                        JSONArray arrayCourse = response.getJSONArray("grades");
+                        JSONArray arrayCourse = response.getJSONArray("courses");
+                        JSONArray arrayGrades = response.getJSONArray("grades");
                         for(int i=0;i<arrayGrades.length();i++)
                         {
                             JSONObject course = (JSONObject)arrayCourse.get(i);
@@ -205,14 +205,14 @@ public class Fragment_Grades extends Fragment {
                             ret.add(g);
                         }
                 } catch (JSONException e) {
-                    Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
+                    Toast.makeText(ctx,e.toString(),Toast.LENGTH_LONG).show();
                 }
 
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ctx,"Error loading grades",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx, error.toString(),Toast.LENGTH_LONG).show();
             }
         });
         q.add(jsonObjectRequest);

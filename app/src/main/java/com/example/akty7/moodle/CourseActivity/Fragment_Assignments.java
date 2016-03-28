@@ -91,7 +91,7 @@ public class Fragment_Assignments extends Fragment {
     }
     private ArrayList<Course> getDataSet() {
         ArrayList results = new ArrayList<String>();
-        bundle.putString("coursecode","cop290");
+        //bundle.putString("coursecode","cop290");
         final ArrayList<Assignments> list = new ArrayList<Assignments>();
 
         RequestQueue q = Volley.newRequestQueue(ctx);
@@ -127,6 +127,7 @@ public class Fragment_Assignments extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
                 Toast.makeText(ctx,"Error Loading Assignments",Toast.LENGTH_LONG).show();
             }
         });
