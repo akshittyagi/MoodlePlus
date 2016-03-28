@@ -185,7 +185,17 @@ public class Fragment_Grades extends Fragment {
 
     private ArrayList<Grades> getGrades() {
 
-        String url = bundle.getString("url") + "/default/grades.json";
+        boolean isSpecific = bundle.getBoolean("isSpecific");
+        String url = bundle.getString("url");
+        if(!isSpecific)
+        {
+            url = url + "/default/grades.json";
+        }
+        else
+        {
+            url = url + "/courses/course.json/"+bundle.getString("courscode")+"/grades";
+        }
+
         final ArrayList<Grades> ret=new ArrayList<Grades>();
 
         RequestQueue q = Volley.newRequestQueue(ctx);
