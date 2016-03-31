@@ -1,5 +1,6 @@
 package com.example.akty7.moodle.HomeActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.CourseActivity.Activity_Course;
 import com.example.akty7.moodle.HelperClasses.Course;
 import com.example.akty7.moodle.R;
@@ -19,12 +20,12 @@ import java.util.ArrayList;
 public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
     private ArrayList<Course> mDataset;
+    Context ctx;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
         TextView code;
         TextView name;
-        TextView desc;
         View v;
         TextView thumbletter;
         public DataObjectHolder(View itemView) {
@@ -32,15 +33,15 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
             v= itemView;
             code = (TextView) itemView.findViewById(R.id.coursecode);
             name = (TextView) itemView.findViewById(R.id.coursename);
-            desc = (TextView) itemView.findViewById(R.id.coursedesc);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
         }
     }
 
 
 
-    public CourseRecyclerViewAdapter(ArrayList<Course> myDataset) {
+    public CourseRecyclerViewAdapter(ArrayList<Course> myDataset,Context ctx) {
         mDataset = myDataset;
+        this.ctx =ctx;
     }
 
     @Override
@@ -57,25 +58,28 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
         //final String urlL = "http://192.168.1.8:8000";
         final String urlL ="http://tapi.cse.iitd.ernet.in:1805";
-        final Course cour = mDataset.get(position);
-        holder.code.setText(cour.coursecode);
-        holder.name.setText(cour.coursename);
-        holder.desc.setText(cour.description);
-        holder.thumbletter.setText(Character.toString(cour.coursename.charAt(0)));
+     //   final Course cour = mDataset.get(position);
+        final Course mycour = mDataset.get(position);
+        final Bundle bundle = new Bundle();
+        bundle.putString("coursename",mycour.coursename);
+        bundle.putString("coursecode",mycour.coursecode);
+        bundle.putString("description",mycour.description);
+        bundle.putString("credits",mycour.credits);
+        bundle.putString("ltp",mycour.ltp);
+        bundle.putString("url",urlL);
+
+        holder.code.setText(mycour.coursecode);
+        holder.name.setText(mycour.coursename);
+        holder.thumbletter.setText(Character.toString(mycour.coursename.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
                 Log.d(LOG_TAG, "onClick at" + position);
-                Intent intent = new Intent(v.getContext(), Activity_Course.class);
+
+                Intent intent = new Intent(ctx, Activity_Course.class);
                 //TYAGI putextra here for course code
-                Bundle bundle = new Bundle();
-                bundle.putString("coursename",cour.coursename);
-                bundle.putString("coursecode",cour.coursecode);
-                bundle.putString("description",cour.description);
-                bundle.putString("credits",cour.credits);
-                bundle.putString("ltp",cour.ltp);
-                bundle.putString("url",urlL);
                 intent.putExtras(bundle);
                 v.getContext().startActivity(intent);
             }

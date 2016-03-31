@@ -22,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.akty7.moodle.Activity_Login;
 import com.example.akty7.moodle.HelperClasses.Thread;
 import com.example.akty7.moodle.DividerItemDecoration;
 import com.example.akty7.moodle.R;
@@ -68,9 +69,9 @@ public class Fragment_Threads extends Fragment {
             public void onClick(View view) {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-                builder.setTitle("New Comment ");
+                builder.setTitle("New Thread Title");
                 final EditText input = new EditText(ctx);
-                input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                input.setInputType(InputType.TYPE_CLASS_TEXT );
                 builder.setView(input);
 
 
@@ -78,8 +79,65 @@ public class Fragment_Threads extends Fragment {
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String m_Text = input.getText().toString();
-                        //TYAGI: JSON API TO SEND THIS AS THE NEW COMMENT
+                        final String threadTitle = input.getText().toString();
+
+                        //TYAGI: JSON API TO SEND THIS AS THE NEW THREAD
+                        AlertDialog.Builder builder1 = new AlertDialog.Builder(ctx);
+                        builder1.setTitle("New Thread Description");
+                        final EditText input1 = new EditText(ctx);
+                        input1.setInputType(InputType.TYPE_CLASS_TEXT);
+                        builder1.setView(input1);
+                        builder1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog1, int which) {
+                                String threadDesc = input1.getText().toString();
+                                String titlet = threadTitle;
+                                String url = "http://tapi.cse.iitd.ernet.in:1805"+"/threads/new.json?title="+titlet+"&description="+threadDesc+"&course_code="+bundle.getString("coursecode");
+                                RequestQueue q = Volley.newRequestQueue(ctx);
+                                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                                    @Override
+                                    public void onResponse(JSONObject response){
+
+                                        try {
+                                            String thread_id = response.getString("thread_id");
+                                            boolean success = (response.getString("success")=="true");
+                                            if(!success)
+                                            {
+                                                Toast.makeText(ctx,"Error adding thread",Toast.LENGTH_LONG).show();
+                                            }
+                                            else if(success)
+                                            {
+                                                //TODO
+                                            }
+
+                                        } catch (JSONException e) {
+                                            Toast.makeText(ctx,"Error Adding thread",Toast.LENGTH_LONG).show();
+                                        }
+
+                                    }
+                                }, new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError error) {
+                                        Toast.makeText(ctx,"Error Adding thread",Toast.LENGTH_LONG).show();
+                                    }
+                                });
+                                q.add(jsonObjectRequest);
+
+
+                                dialog1.dismiss();
+                            }
+                        });
+                        builder1.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                        AlertDialog dialog1 = builder1.create();
+                        dialog1.show();
+
+
                         dialog.dismiss();
                     }
                 });

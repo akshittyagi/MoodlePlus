@@ -63,7 +63,7 @@ public class Fragment_Assignments extends Fragment {
         mRecyclerView.addItemDecoration(new DividerItemDecoration(ctx, DividerItemDecoration.VERTICAL_LIST));
         mLayoutManager = new LinearLayoutManager(rootView.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CourseRecyclerViewAdapter(getDataSet());
+        mAdapter = new AssignRecyclerViewAdapter(getDataSet(),ctx);
         mRecyclerView.setAdapter(mAdapter);
         return rootView;
     }
@@ -75,7 +75,7 @@ public class Fragment_Assignments extends Fragment {
         String file;
         String createdat;
         String registeredcourse;
-        Boolean lateallowed;
+        String lateallowed;
         String deadline;
         Spanned desc;
 
@@ -85,13 +85,11 @@ public class Fragment_Assignments extends Fragment {
             file = bundle.getString("file_");
             createdat = bundle.getString("created_at");
             registeredcourse = bundle.getString("registered_course_id");
-            lateallowed = (bundle.getString("late_days_allowed")=="1");
+            lateallowed = (bundle.getString("late_days_allowed"));
             deadline = bundle.getString("deadline");
         }
     }
-    private ArrayList<Course> getDataSet() {
-        ArrayList results = new ArrayList<String>();
-        //bundle.putString("coursecode","cop290");
+    private ArrayList<Assignments> getDataSet() {
         final ArrayList<Assignments> list = new ArrayList<Assignments>();
 
         RequestQueue q = Volley.newRequestQueue(ctx);
@@ -111,7 +109,7 @@ public class Fragment_Assignments extends Fragment {
                         bundle.putString("file_", grades.getString("file_"));
                         bundle.putString("created_at", grades.getString("created_at"));
                         bundle.putString("registered_course_id", grades.getString("registered_course_id"));
-                        bundle.putBoolean("late_days_allowed", grades.getString("late_days_allowed") == "1");
+                        bundle.putString("late_days_allowed", grades.getString("late_days_allowed"));
                         bundle.putString("deadline",grades.getString("deadline"));
                         String description = grades.getString("description");
                         ass = new Assignments(bundle);
@@ -135,10 +133,6 @@ public class Fragment_Assignments extends Fragment {
 
         //TODO: list contains the list of assignments of a particular course
 
-        for (int index = 0; index < 20; index++) {
-            String obj = "Course "+index;
-            results.add(index, obj);
-        }
-        return results;
+        return list;
     }
 }

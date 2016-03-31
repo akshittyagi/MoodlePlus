@@ -14,12 +14,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to Moodle Plus"
+        android:text="Welcome to \n Moodle Plus"
         android:id="@+id/textView3"
-        android:layout_marginTop="117dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:textColor="#f37b19"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Made by \n Akshit Tyagi\n Karan Dwivedi\n Rishabh Kumar"
+        android:id="@+id/textView4"
+        android:textColor="#f70a0a"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

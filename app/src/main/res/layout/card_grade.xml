@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/grade_card_view"
+        android:layout_gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="0dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            
+            android:layout_width="fill_parent"
+
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/thumb"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/circle"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/coursecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@id/thumb"
+                android:gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD111"
+                android:id="@+id/coursescore"
+                android:gravity="right"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/courseoutof"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

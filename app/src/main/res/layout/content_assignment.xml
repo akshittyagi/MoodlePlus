@@ -28,12 +28,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Asignment Name"
-
+                android:text="Assignment Name"
                 android:id="@+id/assname"
-                android:layout_gravity="center_vertical" />
+                android:gravity="center_horizontal" />
 
 
             <TextView
@@ -43,13 +41,14 @@
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:textAppearance="?android:attr/textAppearanceButton"
                 android:id="@+id/link"
-                android:layout_gravity="center_vertical" />
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Created At"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
 
                 android:id="@+id/uploaddate"
@@ -59,8 +58,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ID101"
-                android:id="@+id/courseid"
-                android:layout_gravity="center_vertical" />
+                android:layout_marginTop="16dp"
+                android:id="@+id/courseidass"
+              android:gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,26 +69,8 @@
                 android:layout_height="wrap_content"
                 android:text="Late days allowed"
                 android:id="@+id/late"
-                android:layout_gravity="center_vertical" />
+                android:gravity="center_horizontal" />
 
-
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-
-                android:id="@+id/sublist"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-
-                android:layout_height="wrap_content"
-                android:text="Type"
-                android:id="@+id/asstype"
-                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -97,7 +79,16 @@
 
                 android:text="Deadline"
                 android:id="@+id/assdead"
-                android:layout_gravity="center_vertical" />
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:text="DESC"
+                android:id="@+id/desc"
+                android:gravity="center" />
 
         </LinearLayout>
     </ScrollView>

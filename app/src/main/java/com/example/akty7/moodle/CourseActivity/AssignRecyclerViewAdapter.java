@@ -4,7 +4,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,21 +20,21 @@ import java.util.ArrayList;
 
 public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<String> mDataset;
+    private ArrayList<Fragment_Assignments.Assignments> mDataset;
     Context ctx;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
         TextView assignTitle;
-        TextView assignLink;
+        TextView assignDL;
         View v;
         TextView thumbletter;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            assignTitle = (TextView) itemView.findViewById(R.id.textView);
-            assignLink = (TextView) itemView.findViewById(R.id.textView2);
+            assignTitle = (TextView) itemView.findViewById(R.id.assigntitle);
+            assignDL = (TextView) itemView.findViewById(R.id.assigndeadline);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
@@ -42,7 +44,7 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
 
 
 
-    public AssignRecyclerViewAdapter(ArrayList<String> myDataset, Context inctx) {
+    public AssignRecyclerViewAdapter(ArrayList<Fragment_Assignments.Assignments> myDataset, Context inctx) {
         mDataset = myDataset;
         ctx = inctx;
     }
@@ -59,10 +61,18 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        String str = mDataset.get(position);
-        holder.assignTitle.setText(str);
-        holder.assignLink.setText(str);
-        holder.thumbletter.setText(Character.toString(str.charAt(0)));
+        final Fragment_Assignments.Assignments str = mDataset.get(position);
+        final Bundle bundle = new Bundle();
+        bundle.putString("name",str.name);
+        bundle.putString("file",str.file);
+        bundle.putString("createdat",str.createdat);
+        bundle.putString("registeredcourse",str.registeredcourse);
+        bundle.putString("lateallowed",str.lateallowed);
+        bundle.putString("deadline",str.deadline);
+        bundle.putString("desc",str.desc.toString());
+        holder.assignTitle.setText(str.name);
+        holder.assignDL.setText(str.deadline);
+        holder.thumbletter.setText(Character.toString(str.name.charAt(0)));
         holder.v.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -71,8 +81,7 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
 
                 Intent intent = new Intent(ctx, Activity_Assignment.class);
 
-           //     TYAGI putxtra here
-
+                intent.putExtras(bundle);
                 ctx.startActivity(intent);
 
 
@@ -83,7 +92,7 @@ public class AssignRecyclerViewAdapter extends RecyclerView.Adapter<AssignRecycl
 
     }
 
-    public void addItem(String dataObj, int index) {
+    public void addItem(Fragment_Assignments.Assignments dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }

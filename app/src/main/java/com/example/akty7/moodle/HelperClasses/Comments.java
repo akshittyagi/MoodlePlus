@@ -5,11 +5,11 @@ package com.example.akty7.moodle.HelperClasses;
  */
 public class Comments {
 
-    String name;
-    String userid;
-    String entryno;
-    String email;
-    String description;
-    String createdat;
-    String threadid;
+    public String name;
+    public String userid;
+    public String entryno;
+    public String email;
+    public String description;
+    public String createdat;
+    public  String threadid;
 }

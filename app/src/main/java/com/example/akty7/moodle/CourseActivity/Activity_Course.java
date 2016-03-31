@@ -59,7 +59,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         drawer.setDrawerListener(toggle);
         toggle.syncState();
         //TYAGI: Add course code as title
-        setTitle("TYAGI!");
+        setTitle(bundleUser.getString("coursecode"));
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -74,8 +74,7 @@ public class Activity_Course extends AppCompatActivity  implements NavigationVie
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Assignments(ctx,bundleUser), "ASSIGNMENTS");
         adapter.addFragment(new Fragment_Threads(ctx,bundleUser), "THREADS");
-        bundleUser.putBoolean("isSpecific",true);
-        adapter.addFragment(new Fragment_Grades(ctx,bundleUser), "RESOURCES");
+        adapter.addFragment(new Fragment_Grades(ctx,bundleUser,true), "GRADES");
 
         viewPager.setAdapter(adapter);
     }

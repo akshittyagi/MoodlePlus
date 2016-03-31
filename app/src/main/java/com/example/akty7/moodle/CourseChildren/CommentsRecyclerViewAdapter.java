@@ -11,28 +11,33 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.akty7.moodle.HelperClasses.Comments;
 import com.example.akty7.moodle.R;
 
 import java.util.ArrayList;
 
 public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<CommentsRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<String> mDataset;
+    private ArrayList<Comments> mDataset;
     Context ctx;
     //private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder {
 
+
+
         TextView comment;
-        TextView person;
+        TextView creator;
+        TextView commdate;
         View v;
         TextView thumbletter;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             v= itemView;
-            comment = (TextView) itemView.findViewById(R.id.textView);
-            person = (TextView) itemView.findViewById(R.id.textView2);
+            comment = (TextView) itemView.findViewById(R.id.commdesc);
+            creator = (TextView) itemView.findViewById(R.id.commauthor);
+            commdate = (TextView) itemView.findViewById(R.id.commcreated);
             thumbletter=(TextView) itemView.findViewById(R.id.thumb);
             Log.i(LOG_TAG, "Adding Listener");
         }
@@ -40,7 +45,7 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<CommentsRe
 
     }
 
-    public CommentsRecyclerViewAdapter(ArrayList<String> myDataset, Context inctx) {
+    public CommentsRecyclerViewAdapter(ArrayList<Comments> myDataset, Context inctx) {
         mDataset = myDataset;
         ctx = inctx;
     }
@@ -57,13 +62,14 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<CommentsRe
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        String str = mDataset.get(position);
-        holder.comment.setText(str);
-        holder.person.setText(str);
-        holder.thumbletter.setText(Character.toString(str.charAt(0)));
+        Comments str = mDataset.get(position);
+        holder.comment.setText(str.description);
+        holder.creator.setText(str.userid);
+        holder.commdate.setText(str.createdat);
+        holder.thumbletter.setText(Character.toString(str.description.charAt(0)));
     }
 
-    public void addItem(String dataObj, int index) {
+    public void addItem(Comments dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }

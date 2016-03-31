@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -59,7 +60,15 @@ public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecy
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
-        Thread str = mDataset.get(position);
+        final Thread str = mDataset.get(position);
+        final Bundle bundle = new Bundle();
+        bundle.putString("userid",str.user_id);
+        bundle.putString("description",str.descriptionTh);
+        bundle.putString("title",str.title);
+        bundle.putString("createdat",str.created_at);
+        bundle.putString("registeredcourse",str.regiscourseid);
+        bundle.putString("updatedat",str.updatedAt);
+        bundle.putString("Threadid",str.Threadid);
         holder.threadTitle.setText(str.title);
         holder.threadCreator.setText(str.user_id);
         holder.thumbletter.setText(Character.toString(str.title.charAt(0)));
@@ -71,7 +80,8 @@ public class ThreadsRecyclerViewAdapter extends RecyclerView.Adapter<ThreadsRecy
 
                 Intent intent = new Intent(ctx, Activity_Comments.class);
                 //intent.putextra
-                ctx.startActivity(intent);
+                intent.putExtras(bundle);
+                        ctx.startActivity(intent);
                 //TYAGII do this putextra
 
             }

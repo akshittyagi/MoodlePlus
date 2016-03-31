@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,11 +63,8 @@ public class Fragment_CourseList extends Fragment {
         mRecyclerView.addItemDecoration(new DividerItemDecoration(ctx, DividerItemDecoration.VERTICAL_LIST));
         mLayoutManager = new LinearLayoutManager(rootView.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CourseRecyclerViewAdapter(getDataSet());
+        mAdapter = new CourseRecyclerViewAdapter(getDataSet(),ctx);
         mRecyclerView.setAdapter(mAdapter);
-
-
-
         return rootView;
     }
     //TYAGI: This method gives fake data.. Instead from the course class, take the inputs
@@ -108,6 +106,8 @@ public class Fragment_CourseList extends Fragment {
                         ArrayList<com.example.akty7.moodle.HelperClasses.Course.Assignment> a=null;
                         ArrayList<CourseThreads> c= null;
                         Course cour = new Course(bundle,a,c);
+
+                        Log.d("COURoooSEE", Courses.size() + "");
                         Courses.add(cour);
 
                     }
@@ -125,6 +125,7 @@ public class Fragment_CourseList extends Fragment {
         q.add(jsonObjectRequest);
 
 
+        Log.d("COURSEE", Courses.size() + "");
 
         return Courses;
     }

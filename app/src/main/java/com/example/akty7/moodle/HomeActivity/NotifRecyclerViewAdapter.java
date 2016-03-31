@@ -80,8 +80,6 @@ public class NotifRecyclerViewAdapter extends RecyclerView.Adapter<NotifRecycler
                         });
                 AlertDialog dialog = builder.create();
                 dialog.show();
-                Intent intent = new Intent(ctx, Activity_Assignment.class);
-                ctx.startActivity(intent);
             }
 
         });

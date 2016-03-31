@@ -44,16 +44,6 @@
                 android:gravity="top"/>
 
             <TextView
-                android:id="@+id/coursedesc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/thumb"
-                android:gravity="top"
-                android:layout_below="@+id/textView"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="COD111"

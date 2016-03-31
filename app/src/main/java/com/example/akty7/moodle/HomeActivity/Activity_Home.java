@@ -82,11 +82,10 @@ public class Activity_Home extends AppCompatActivity
 
     private void setupViewPager(ViewPager viewPager) {
         Bundle bundle = getIntent().getExtras();
-        bundle.putBoolean("isSpecific",false);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment_Notifications(ctx,bundle), "NOTIFICATIONS");
         adapter.addFragment(new Fragment_CourseList(ctx,bundle), "COURSES");
-        adapter.addFragment(new Fragment_Grades(ctx,bundle), "GRADES");
+        adapter.addFragment(new Fragment_Grades(ctx,bundle,false), "GRADES");
         viewPager.setAdapter(adapter);
     }
 

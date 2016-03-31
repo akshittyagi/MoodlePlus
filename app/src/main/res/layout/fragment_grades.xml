@@ -4,12 +4,10 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity.Fragment_CourseList">
 
-
-    <TableLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grades_recycler_view"
         android:layout_width="match_parent"
-        android:id="@+id/overallgradetable"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal|top"
-        android:stretchColumns="1">
-    </TableLayout>
+        android:scrollbars="vertical"/>
+
 </FrameLayout>

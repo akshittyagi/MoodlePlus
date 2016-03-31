@@ -41,6 +41,10 @@
             android:name=".CourseChildren.Activity_Assignment"
             android:label="@string/title_activity_activity__assignment"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CourseChildren.Activity_Comments"
+            android:label="Comments"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
